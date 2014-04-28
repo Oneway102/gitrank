@@ -11,14 +11,6 @@ exports.awesomeThings = (req, res) ->
     "Express"
   ]
 
-exports.manufacturers = require("./manufacturers")
-exports.products = require("./products")
-exports.packages = require("./packages")
-exports.releases = require("./releases")
-exports.auth = require("./auth")
-exports.account = require("./account")
-exports.users = require("./users")
-
 exports.utils = require("./utils")
 
 ###
