@@ -11,7 +11,7 @@ app = express()
 global._app = app
 
 # all environments
-app.set "port", 9100 or process.env.PORT or 3000
+app.set "port", process.env.PORT or 3000
 app.engine 'html', require('ejs').renderFile
 app.set 'view engine', 'html'
 app.enable 'trust proxy'
