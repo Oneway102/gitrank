@@ -390,7 +390,13 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
-    'concurrent:dist',
+    'coffee',
+    'compass:dist',
+    'copy:styles',
+    'imagemin',
+    'svgmin',
+    'htmlmin'
+    //'concurrent:dist',
     'autoprefixer',
     'concat',
     'copy:dist',
