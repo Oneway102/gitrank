@@ -1,0 +1,15 @@
+          <ol>
+            <li title="{{person.info.html_url}}" ng-repeat="person in rank.data" ng-click="viewPerson(person)">
+              <h3 class="pos">
+                <div class="num">{{person.rank.China}}</div>
+                <div class="score">{{getScore(person)}}</div>
+              </h3>
+              <div class="module-info">
+                <h3>{{getName(person)}}</h3>
+                <p>{{person.info.html_url}}</p>
+              </div>
+              <div class="gravatar">
+                <img src="{{person.info.avatar_url}}">
+              </div>
+            </li>
+          </ol>

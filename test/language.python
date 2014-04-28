@@ -1,0 +1,1361 @@
+{
+
+    "language": "Python",
+    "country": "China",
+    "page_count": 10,
+    "page": 0,
+    "data": [
+        {
+            "contrib": {
+                "C": {
+                    "2013": {
+                        "01": 6,
+                        "06": 32,
+                        "07": 15,
+                        "04": 1,
+                        "08": 1,
+                        "09": 1,
+                        "12": 31
+                    },
+                    "2012": {
+                        "10": 22,
+                        "12": 2,
+                        "09": 22,
+                        "06": 5
+                    }
+                },
+                "Shell": {
+                    "2013": {
+                        "02": 7,
+                        "03": 1,
+                        "01": 41,
+                        "04": 3
+                    },
+                    "2012": {
+                        "11": 72,
+                        "10": 138,
+                        "12": 30,
+                        "06": 19
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "02": 12,
+                        "03": 11,
+                        "01": 47,
+                        "04": 19
+                    },
+                    "2013": {
+                        "02": 84,
+                        "03": 168,
+                        "01": 120,
+                        "06": 113,
+                        "07": 17,
+                        "04": 98,
+                        "05": 196,
+                        "08": 38,
+                        "09": 32,
+                        "12": 28,
+                        "11": 122,
+                        "10": 68
+                    },
+                    "2012": {
+                        "11": 18,
+                        "10": 20,
+                        "12": 74,
+                        "09": 38
+                    }
+                },
+                "JavaScript": {
+                    "2014": {
+                        "01": 1
+                    },
+                    "2013": {
+                        "02": 54,
+                        "03": 37,
+                        "01": 20,
+                        "06": 5,
+                        "04": 11,
+                        "08": 1,
+                        "12": 6,
+                        "11": 29
+                    },
+                    "2012": {
+                        "10": 36,
+                        "08": 57,
+                        "09": 35,
+                        "06": 14,
+                        "05": 2
+                    }
+                },
+                "VimL": {
+                    "2014": {
+                        "02": 1,
+                        "03": 2,
+                        "01": 4,
+                        "04": 4
+                    },
+                    "2013": {
+                        "02": 17,
+                        "03": 11,
+                        "01": 103,
+                        "07": 20,
+                        "04": 11,
+                        "05": 3,
+                        "08": 5,
+                        "09": 4,
+                        "11": 1
+                    },
+                    "2012": {
+                        "09": 4,
+                        "06": 1
+                    }
+                },
+                "Perl": {
+                    "2012": {
+                        "09": 15
+                    }
+                },
+                "CoffeeScript": {
+                    "2013": {
+                        "08": 1,
+                        "04": 7
+                    }
+                },
+                "Go": {
+                    "2013": {
+                        "11": 4
+                    }
+                },
+                "PHP": {
+                    "2013": {
+                        "08": 1
+                    },
+                    "2012": {
+                        "10": 14,
+                        "09": 1,
+                        "06": 46,
+                        "07": 2,
+                        "05": 28
+                    }
+                },
+                "Ruby": {
+                    "2013": {
+                        "05": 2
+                    },
+                    "2012": {
+                        "10": 1,
+                        "07": 16
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 3,
+                        "03": 4,
+                        "01": 4,
+                        "04": 2
+                    },
+                    "2013": {
+                        "11": 7,
+                        "10": 21,
+                        "08": 10,
+                        "09": 46,
+                        "12": 13
+                    }
+                }
+            },
+            "info": {
+                "bio": "",
+                "site_admin": false,
+                "updated_at": "2014-04-16T15:00:27Z",
+                "gravatar_id": "20dd05347249e3984f2d4546ea0ca127",
+                "hireable": false,
+                "id": 1687443,
+                "followers_url": "https://api.github.com/users/hit9/followers",
+                "following_url": "https://api.github.com/users/hit9/following{/other_user}",
+                "blog": "http://hit9.org",
+                "etag": "\"8f43cbb7a8052c12d4ff213fd4a458bd\"",
+                "followers": 196,
+                "location": "Harbin, China",
+                "type": "User",
+                "email": "nz2324@126.com",
+                "public_repos": 42,
+                "events_url": "https://api.github.com/users/hit9/events{/privacy}",
+                "company": "Eleme.Inc",
+                "gists_url": "https://api.github.com/users/hit9/gists{/gist_id}",
+                "html_url": "https://github.com/hit9",
+                "subscriptions_url": "https://api.github.com/users/hit9/subscriptions",
+                "received_events_url": "https://api.github.com/users/hit9/received_events",
+                "starred_url": "https://api.github.com/users/hit9/starred{/owner}{/repo}",
+                "public_gists": 19,
+                "name": "王超",
+                "organizations_url": "https://api.github.com/users/hit9/orgs",
+                "url": "https://api.github.com/users/hit9",
+                "created_at": "2012-04-28T08:04:22Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1687443?",
+                "repos_url": "https://api.github.com/users/hit9/repos",
+                "following": 91,
+                "login": "hit9"
+            },
+            "_id": "hit9",
+            "rank": {
+                "world": 472,
+                "China": 1
+            }
+        },
+        {
+            "contrib": {
+                "Apex": {
+                    "2013": {
+                        "03": 4
+                    },
+                    "2012": {
+                        "04": 3
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "02": 21,
+                        "03": 28,
+                        "01": 19,
+                        "04": 14
+                    },
+                    "2013": {
+                        "11": 50,
+                        "10": 93,
+                        "12": 75,
+                        "06": 90,
+                        "07": 176,
+                        "04": 44,
+                        "05": 240,
+                        "08": 46,
+                        "09": 103
+                    }
+                }
+            },
+            "info": {
+                "bio": "",
+                "site_admin": false,
+                "updated_at": "2014-04-17T01:35:51Z",
+                "gravatar_id": "0a2306f29de093a1b503aefcc6cfb848",
+                "hireable": false,
+                "id": 1450977,
+                "followers_url": "https://api.github.com/users/xjsender/followers",
+                "following_url": "https://api.github.com/users/xjsender/following{/other_user}",
+                "blog": "",
+                "etag": "\"fc9d68be661354f0f92bd9bbbe6f73af\"",
+                "followers": 14,
+                "location": "Shanghai, China.",
+                "type": "User",
+                "email": "mouse.mliu@gmail.com",
+                "public_repos": 12,
+                "events_url": "https://api.github.com/users/xjsender/events{/privacy}",
+                "company": "PwC China",
+                "gists_url": "https://api.github.com/users/xjsender/gists{/gist_id}",
+                "html_url": "https://github.com/xjsender",
+                "subscriptions_url": "https://api.github.com/users/xjsender/subscriptions",
+                "received_events_url": "https://api.github.com/users/xjsender/received_events",
+                "starred_url": "https://api.github.com/users/xjsender/starred{/owner}{/repo}",
+                "public_gists": 3,
+                "name": "Hao Liu",
+                "organizations_url": "https://api.github.com/users/xjsender/orgs",
+                "url": "https://api.github.com/users/xjsender",
+                "created_at": "2012-02-19T10:35:48Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1450977?",
+                "repos_url": "https://api.github.com/users/xjsender/repos",
+                "following": 24,
+                "login": "xjsender"
+            },
+            "_id": "xjsender",
+            "rank": {
+                "world": 751,
+                "China": 2
+            }
+        },
+        {
+            "contrib": {
+                "C": {
+                    "2012": {
+                        "10": 11
+                    }
+                },
+                "D": {
+                    "2012": {
+                        "10": 3
+                    }
+                },
+                "Scala": {
+                    "2013": {
+                        "11": 1
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "02": 27,
+                        "03": 2,
+                        "01": 44,
+                        "04": 4
+                    },
+                    "2013": {
+                        "11": 161,
+                        "10": 137,
+                        "12": 67,
+                        "06": 2,
+                        "07": 130,
+                        "05": 10,
+                        "08": 233,
+                        "09": 134
+                    },
+                    "2012": {
+                        "11": 11,
+                        "03": 23,
+                        "10": 22,
+                        "04": 14,
+                        "05": 1
+                    }
+                },
+                "JavaScript": {
+                    "2014": {
+                        "03": 1,
+                        "01": 1
+                    }
+                },
+                "VimL": {
+                    "2013": {
+                        "08": 6,
+                        "07": 10
+                    }
+                }
+            },
+            "info": {
+                "bio": "",
+                "site_admin": false,
+                "updated_at": "2014-04-15T10:46:10Z",
+                "gravatar_id": "b53b26bcc58f20afda45f8938886b56f",
+                "hireable": true,
+                "id": 453533,
+                "followers_url": "https://api.github.com/users/chengdujin/followers",
+                "following_url": "https://api.github.com/users/chengdujin/following{/other_user}",
+                "blog": null,
+                "etag": "\"81c1b92634d132bf79560b56ed39612f\"",
+                "followers": 14,
+                "location": "Shenzhen, China",
+                "type": "User",
+                "email": "chengdujin@gmail.com",
+                "public_repos": 12,
+                "events_url": "https://api.github.com/users/chengdujin/events{/privacy}",
+                "company": null,
+                "gists_url": "https://api.github.com/users/chengdujin/gists{/gist_id}",
+                "html_url": "https://github.com/chengdujin",
+                "subscriptions_url": "https://api.github.com/users/chengdujin/subscriptions",
+                "received_events_url": "https://api.github.com/users/chengdujin/received_events",
+                "starred_url": "https://api.github.com/users/chengdujin/starred{/owner}{/repo}",
+                "public_gists": 7,
+                "name": "Yuan JIN",
+                "organizations_url": "https://api.github.com/users/chengdujin/orgs",
+                "url": "https://api.github.com/users/chengdujin",
+                "created_at": "2010-10-25T19:21:48Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/453533?",
+                "repos_url": "https://api.github.com/users/chengdujin/repos",
+                "following": 56,
+                "login": "chengdujin"
+            },
+            "_id": "chengdujin",
+            "rank": {
+                "world": 768,
+                "China": 3
+            }
+        },
+        {
+            "contrib": {
+                "Python": {
+                    "2014": {
+                        "02": 67,
+                        "03": 15,
+                        "01": 48,
+                        "04": 9
+                    },
+                    "2013": {
+                        "02": 62,
+                        "03": 17,
+                        "01": 47,
+                        "06": 20,
+                        "07": 80,
+                        "04": 35,
+                        "05": 39,
+                        "08": 135,
+                        "09": 34,
+                        "12": 11,
+                        "11": 16,
+                        "10": 17
+                    },
+                    "2012": {
+                        "11": 2,
+                        "03": 12,
+                        "12": 20,
+                        "06": 3,
+                        "07": 112,
+                        "04": 33,
+                        "10": 14,
+                        "08": 66,
+                        "09": 26
+                    }
+                },
+                "JavaScript": {
+                    "2014": {
+                        "03": 1
+                    },
+                    "2013": {
+                        "02": 7,
+                        "03": 28,
+                        "06": 7,
+                        "04": 10,
+                        "05": 3
+                    },
+                    "2012": {
+                        "03": 74,
+                        "07": 3,
+                        "04": 18,
+                        "05": 1
+                    }
+                },
+                "C++": {
+                    "2012": {
+                        "12": 1,
+                        "06": 48,
+                        "07": 1,
+                        "05": 37
+                    }
+                },
+                "PHP": {
+                    "2013": {
+                        "12": 2
+                    }
+                },
+                "Ruby": {
+                    "2013": {
+                        "08": 1
+                    },
+                    "2012": {
+                        "08": 2,
+                        "09": 2
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 82,
+                        "03": 30,
+                        "01": 3
+                    },
+                    "2013": {
+                        "08": 8,
+                        "09": 2
+                    }
+                }
+            },
+            "info": {
+                "bio": "",
+                "site_admin": false,
+                "updated_at": "2014-04-15T14:57:09Z",
+                "gravatar_id": "0024710771815ef9b74881ab21ba4173",
+                "hireable": false,
+                "id": 876694,
+                "followers_url": "https://api.github.com/users/whtsky/followers",
+                "following_url": "https://api.github.com/users/whtsky/following{/other_user}",
+                "blog": "http://whouz.com",
+                "etag": "\"80f57e1578a0e982d11749dba84a4407\"",
+                "followers": 128,
+                "location": "Jinan, China",
+                "type": "User",
+                "email": "whtsky@gmail.com",
+                "public_repos": 33,
+                "events_url": "https://api.github.com/users/whtsky/events{/privacy}",
+                "company": "",
+                "gists_url": "https://api.github.com/users/whtsky/gists{/gist_id}",
+                "html_url": "https://github.com/whtsky",
+                "subscriptions_url": "https://api.github.com/users/whtsky/subscriptions",
+                "received_events_url": "https://api.github.com/users/whtsky/received_events",
+                "starred_url": "https://api.github.com/users/whtsky/starred{/owner}{/repo}",
+                "public_gists": 22,
+                "name": "whtsky",
+                "organizations_url": "https://api.github.com/users/whtsky/orgs",
+                "url": "https://api.github.com/users/whtsky",
+                "created_at": "2011-06-26T12:43:40Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/876694?",
+                "repos_url": "https://api.github.com/users/whtsky/repos",
+                "following": 8,
+                "login": "whtsky"
+            },
+            "_id": "whtsky",
+            "rank": {
+                "world": 870,
+                "China": 4
+            }
+        },
+        {
+            "contrib": {
+                "C": {
+                    "2014": {
+                        "02": 2,
+                        "03": 2,
+                        "01": 3,
+                        "04": 2
+                    },
+                    "2013": {
+                        "12": 4,
+                        "01": 1,
+                        "07": 2,
+                        "05": 1
+                    },
+                    "2012": {
+                        "07": 6
+                    }
+                },
+                "Scheme": {
+                    "2013": {
+                        "06": 2
+                    }
+                },
+                "Java": {
+                    "2014": {
+                        "02": 1,
+                        "01": 2,
+                        "04": 1
+                    },
+                    "2013": {
+                        "11": 32,
+                        "03": 19,
+                        "06": 17,
+                        "07": 5,
+                        "05": 25,
+                        "08": 3,
+                        "09": 56,
+                        "10": 67
+                    },
+                    "2012": {
+                        "11": 17,
+                        "10": 1,
+                        "12": 6,
+                        "07": 23,
+                        "08": 2,
+                        "09": 5
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "02": 54,
+                        "03": 69,
+                        "01": 44,
+                        "04": 83
+                    },
+                    "2013": {
+                        "02": 40,
+                        "03": 98,
+                        "01": 10,
+                        "06": 13,
+                        "07": 55,
+                        "04": 28,
+                        "05": 12,
+                        "08": 49,
+                        "09": 4,
+                        "12": 32,
+                        "11": 9,
+                        "10": 1
+                    },
+                    "2012": {
+                        "11": 34,
+                        "03": 5,
+                        "12": 4,
+                        "06": 9,
+                        "07": 156,
+                        "04": 18,
+                        "05": 11,
+                        "08": 17,
+                        "09": 17,
+                        "10": 18
+                    }
+                },
+                "JavaScript": {
+                    "2014": {
+                        "02": 33,
+                        "03": 1
+                    },
+                    "2013": {
+                        "11": 1,
+                        "03": 5,
+                        "06": 24,
+                        "07": 14,
+                        "04": 4,
+                        "05": 1,
+                        "08": 16,
+                        "10": 3
+                    },
+                    "2012": {
+                        "12": 2
+                    }
+                },
+                "CoffeeScript": {
+                    "2014": {
+                        "03": 4,
+                        "04": 25
+                    }
+                },
+                "Objective-C": {
+                    "2013": {
+                        "09": 1
+                    }
+                },
+                "Shell": {
+                    "2014": {
+                        "02": 5,
+                        "03": 1,
+                        "01": 1,
+                        "04": 4
+                    },
+                    "2013": {
+                        "11": 2,
+                        "10": 6,
+                        "12": 2,
+                        "07": 6,
+                        "05": 2,
+                        "08": 8,
+                        "09": 1
+                    }
+                },
+                "PHP": {
+                    "2013": {
+                        "10": 1
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "03": 1,
+                        "04": 1
+                    },
+                    "2013": {
+                        "11": 3,
+                        "08": 26
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-17T09:44:23Z",
+                "gravatar_id": "bc3d38d961c654b44fb084a4411d94f4",
+                "hireable": false,
+                "id": 1175567,
+                "followers_url": "https://api.github.com/users/xen0n/followers",
+                "following_url": "https://api.github.com/users/xen0n/following{/other_user}",
+                "blog": null,
+                "etag": "\"fef520a5e5f89b8abaa005f858b9a185\"",
+                "followers": 53,
+                "location": "Wuxi, Jiangsu, China",
+                "type": "User",
+                "email": null,
+                "public_repos": 46,
+                "events_url": "https://api.github.com/users/xen0n/events{/privacy}",
+                "company": "Jiangnan University",
+                "gists_url": "https://api.github.com/users/xen0n/gists{/gist_id}",
+                "html_url": "https://github.com/xen0n",
+                "subscriptions_url": "https://api.github.com/users/xen0n/subscriptions",
+                "received_events_url": "https://api.github.com/users/xen0n/received_events",
+                "starred_url": "https://api.github.com/users/xen0n/starred{/owner}{/repo}",
+                "public_gists": 3,
+                "name": "Wang Xuerui",
+                "organizations_url": "https://api.github.com/users/xen0n/orgs",
+                "url": "https://api.github.com/users/xen0n",
+                "created_at": "2011-11-06T09:07:08Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1175567?",
+                "repos_url": "https://api.github.com/users/xen0n/repos",
+                "following": 127,
+                "login": "xen0n"
+            },
+            "_id": "xen0n",
+            "rank": {
+                "world": 949,
+                "China": 5
+            }
+        },
+        {
+            "contrib": {
+                "C": {
+                    "2014": {
+                        "02": 19,
+                        "03": 16,
+                        "01": 20,
+                        "04": 19
+                    },
+                    "2013": {
+                        "02": 1,
+                        "03": 19,
+                        "01": 8,
+                        "06": 18,
+                        "07": 40,
+                        "04": 10,
+                        "05": 9,
+                        "08": 35,
+                        "09": 28,
+                        "12": 13,
+                        "11": 15,
+                        "10": 17
+                    },
+                    "2012": {
+                        "11": 2,
+                        "06": 4,
+                        "04": 3,
+                        "05": 1
+                    }
+                },
+                "Shell": {
+                    "2014": {
+                        "02": 4,
+                        "03": 8,
+                        "04": 3
+                    },
+                    "2013": {
+                        "11": 1,
+                        "03": 2,
+                        "09": 3,
+                        "10": 1
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "02": 84,
+                        "03": 41,
+                        "01": 29,
+                        "04": 3
+                    },
+                    "2013": {
+                        "02": 71,
+                        "03": 71,
+                        "01": 3,
+                        "06": 64,
+                        "07": 129,
+                        "04": 100,
+                        "05": 41,
+                        "08": 76,
+                        "09": 25,
+                        "12": 27,
+                        "11": 2,
+                        "10": 33
+                    },
+                    "2012": {
+                        "11": 3,
+                        "10": 1,
+                        "08": 16,
+                        "05": 7
+                    }
+                },
+                "JavaScript": {
+                    "2013": {
+                        "03": 2,
+                        "08": 1,
+                        "06": 6,
+                        "05": 1
+                    }
+                },
+                "VimL": {
+                    "2013": {
+                        "04": 1
+                    },
+                    "2012": {
+                        "10": 2
+                    }
+                },
+                "C++": {
+                    "2013": {
+                        "02": 4,
+                        "03": 1,
+                        "06": 2,
+                        "07": 2,
+                        "04": 4,
+                        "05": 8,
+                        "08": 4
+                    }
+                },
+                "Objective-C": {
+                    "2013": {
+                        "10": 3
+                    }
+                },
+                "Nemerle": {
+                    "2014": {
+                        "01": 2
+                    },
+                    "2013": {
+                        "08": 4
+                    }
+                },
+                "PHP": {
+                    "2014": {
+                        "01": 5
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 2
+                    },
+                    "2013": {
+                        "08": 5,
+                        "09": 4
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-17T09:27:44Z",
+                "gravatar_id": "ce0c223dc608210cc6be333ac251dd78",
+                "hireable": false,
+                "id": 1310693,
+                "followers_url": "https://api.github.com/users/biergaizi/followers",
+                "following_url": "https://api.github.com/users/biergaizi/following{/other_user}",
+                "blog": "http://biergaizi.info",
+                "etag": "\"afef9ffcfb9f90856d7b287a36f1452b\"",
+                "followers": 69,
+                "location": "Beijing, China",
+                "type": "User",
+                "email": "biergaizi2009@gmail.com",
+                "public_repos": 27,
+                "events_url": "https://api.github.com/users/biergaizi/events{/privacy}",
+                "company": null,
+                "gists_url": "https://api.github.com/users/biergaizi/gists{/gist_id}",
+                "html_url": "https://github.com/biergaizi",
+                "subscriptions_url": "https://api.github.com/users/biergaizi/subscriptions",
+                "received_events_url": "https://api.github.com/users/biergaizi/received_events",
+                "starred_url": "https://api.github.com/users/biergaizi/starred{/owner}{/repo}",
+                "public_gists": 4,
+                "name": "Tom Li",
+                "organizations_url": "https://api.github.com/users/biergaizi/orgs",
+                "url": "https://api.github.com/users/biergaizi",
+                "created_at": "2012-01-07T01:02:41Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1310693?",
+                "repos_url": "https://api.github.com/users/biergaizi/repos",
+                "following": 15,
+                "login": "biergaizi"
+            },
+            "_id": "biergaizi",
+            "rank": {
+                "world": 1049,
+                "China": 6
+            }
+        },
+        {
+            "contrib": {
+                "Python": {
+                    "2014": {
+                        "02": 5,
+                        "03": 3,
+                        "01": 3,
+                        "04": 5
+                    },
+                    "2013": {
+                        "02": 8,
+                        "03": 45,
+                        "12": 50,
+                        "06": 44,
+                        "07": 53,
+                        "04": 200,
+                        "05": 188,
+                        "08": 33,
+                        "09": 39,
+                        "11": 73,
+                        "10": 12
+                    }
+                },
+                "Lua": {
+                    "2014": {
+                        "02": 1,
+                        "03": 6,
+                        "01": 1,
+                        "04": 2
+                    },
+                    "2013": {
+                        "11": 1,
+                        "10": 2,
+                        "08": 33,
+                        "09": 10,
+                        "12": 2
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 13,
+                        "03": 1,
+                        "01": 22,
+                        "04": 7
+                    },
+                    "2013": {
+                        "11": 1,
+                        "10": 1,
+                        "09": 2
+                    }
+                },
+                "C++": {
+                    "2013": {
+                        "01": 1
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-13T02:23:00Z",
+                "gravatar_id": "a9b61454f15f854e6592de84c4225e1c",
+                "hireable": true,
+                "id": 322336,
+                "followers_url": "https://api.github.com/users/busuncle/followers",
+                "following_url": "https://api.github.com/users/busuncle/following{/other_user}",
+                "blog": "http://busuncle.github.io",
+                "etag": "\"c471830bb89aa14382bbcaeede6741ca\"",
+                "followers": 5,
+                "location": "Guangzhou.China.",
+                "type": "User",
+                "email": "lizhij2@gmail.com",
+                "public_repos": 7,
+                "events_url": "https://api.github.com/users/busuncle/events{/privacy}",
+                "company": "",
+                "gists_url": "https://api.github.com/users/busuncle/gists{/gist_id}",
+                "html_url": "https://github.com/busuncle",
+                "subscriptions_url": "https://api.github.com/users/busuncle/subscriptions",
+                "received_events_url": "https://api.github.com/users/busuncle/received_events",
+                "starred_url": "https://api.github.com/users/busuncle/starred{/owner}{/repo}",
+                "public_gists": 0,
+                "name": "busuncle",
+                "organizations_url": "https://api.github.com/users/busuncle/orgs",
+                "url": "https://api.github.com/users/busuncle",
+                "created_at": "2010-07-04T07:43:10Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/322336?",
+                "repos_url": "https://api.github.com/users/busuncle/repos",
+                "following": 1,
+                "login": "busuncle"
+            },
+            "_id": "busuncle",
+            "rank": {
+                "world": 1164,
+                "China": 7
+            }
+        },
+        {
+            "contrib": {
+                "C": {
+                    "2014": {
+                        "03": 1
+                    },
+                    "2013": {
+                        "03": 1,
+                        "01": 13
+                    },
+                    "2012": {
+                        "11": 3,
+                        "03": 14,
+                        "12": 4,
+                        "04": 5,
+                        "10": 6
+                    }
+                },
+                "Shell": {
+                    "2013": {
+                        "11": 10,
+                        "03": 9,
+                        "06": 2,
+                        "07": 1,
+                        "04": 6,
+                        "05": 3,
+                        "08": 6,
+                        "09": 1
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "02": 14,
+                        "03": 30,
+                        "01": 39,
+                        "04": 10
+                    },
+                    "2013": {
+                        "02": 5,
+                        "03": 48,
+                        "01": 2,
+                        "06": 41,
+                        "07": 19,
+                        "04": 52,
+                        "05": 68,
+                        "08": 73,
+                        "09": 66,
+                        "12": 79,
+                        "11": 14,
+                        "10": 25
+                    },
+                    "2012": {
+                        "11": 26,
+                        "03": 16,
+                        "12": 13,
+                        "06": 7,
+                        "07": 20,
+                        "04": 58,
+                        "05": 19,
+                        "08": 7,
+                        "09": 1,
+                        "10": 2
+                    }
+                },
+                "JavaScript": {
+                    "2014": {
+                        "02": 1,
+                        "04": 2
+                    },
+                    "2013": {
+                        "02": 11,
+                        "03": 231,
+                        "01": 144,
+                        "06": 62,
+                        "07": 9,
+                        "04": 32,
+                        "05": 21,
+                        "08": 16,
+                        "09": 19,
+                        "12": 7,
+                        "11": 53,
+                        "10": 100
+                    },
+                    "2012": {
+                        "11": 58,
+                        "03": 1,
+                        "08": 5,
+                        "09": 4,
+                        "12": 79
+                    }
+                },
+                "VimL": {
+                    "2012": {
+                        "03": 5
+                    }
+                },
+                "TeX": {
+                    "2014": {
+                        "04": 1
+                    }
+                },
+                "Matlab": {
+                    "2013": {
+                        "12": 16
+                    }
+                },
+                "Go": {
+                    "2014": {
+                        "01": 13,
+                        "04": 1
+                    },
+                    "2013": {
+                        "02": 2,
+                        "03": 8,
+                        "12": 7,
+                        "11": 9
+                    },
+                    "2012": {
+                        "11": 5,
+                        "12": 3
+                    }
+                },
+                "PHP": {
+                    "2014": {
+                        "03": 1,
+                        "01": 5,
+                        "04": 1
+                    },
+                    "2013": {
+                        "11": 1,
+                        "10": 9,
+                        "12": 10,
+                        "06": 3,
+                        "07": 2,
+                        "04": 8,
+                        "05": 11,
+                        "08": 7,
+                        "09": 2
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 15,
+                        "03": 13,
+                        "01": 34,
+                        "04": 2
+                    },
+                    "2013": {
+                        "11": 24,
+                        "10": 1,
+                        "08": 2,
+                        "12": 56
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-16T13:00:05Z",
+                "gravatar_id": "8c3c504e180e14ce1410cb384a10d759",
+                "hireable": false,
+                "id": 834231,
+                "followers_url": "https://api.github.com/users/youngsterxyf/followers",
+                "following_url": "https://api.github.com/users/youngsterxyf/following{/other_user}",
+                "blog": "http://youngsterxyf.github.io/",
+                "etag": "\"8edfc221579a2e31bcc9940de0b186e2\"",
+                "followers": 101,
+                "location": "上海",
+                "type": "User",
+                "email": "",
+                "public_repos": 46,
+                "events_url": "https://api.github.com/users/youngsterxyf/events{/privacy}",
+                "company": "Tencent",
+                "gists_url": "https://api.github.com/users/youngsterxyf/gists{/gist_id}",
+                "html_url": "https://github.com/youngsterxyf",
+                "subscriptions_url": "https://api.github.com/users/youngsterxyf/subscriptions",
+                "received_events_url": "https://api.github.com/users/youngsterxyf/received_events",
+                "starred_url": "https://api.github.com/users/youngsterxyf/starred{/owner}{/repo}",
+                "public_gists": 52,
+                "name": "夏永锋",
+                "organizations_url": "https://api.github.com/users/youngsterxyf/orgs",
+                "url": "https://api.github.com/users/youngsterxyf",
+                "created_at": "2011-06-07T03:49:53Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/834231?",
+                "repos_url": "https://api.github.com/users/youngsterxyf/repos",
+                "following": 26,
+                "login": "youngsterxyf"
+            },
+            "_id": "youngsterxyf",
+            "rank": {
+                "world": 1199,
+                "China": 8
+            }
+        },
+        {
+            "contrib": {
+                "C": {
+                    "2014": {
+                        "03": 8
+                    },
+                    "2012": {
+                        "11": 14
+                    }
+                },
+                "Shell": {
+                    "2013": {
+                        "05": 1
+                    }
+                },
+                "Java": {
+                    "2012": {
+                        "05": 1
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "02": 1,
+                        "03": 26,
+                        "01": 14,
+                        "04": 1
+                    },
+                    "2013": {
+                        "02": 1,
+                        "03": 4,
+                        "01": 24,
+                        "06": 20,
+                        "04": 58,
+                        "05": 32,
+                        "08": 1,
+                        "12": 11,
+                        "11": 14,
+                        "10": 11
+                    },
+                    "2012": {
+                        "11": 64,
+                        "03": 32,
+                        "12": 52,
+                        "06": 64,
+                        "07": 123,
+                        "04": 28,
+                        "05": 46,
+                        "08": 110,
+                        "09": 13,
+                        "10": 11
+                    }
+                },
+                "JavaScript": {
+                    "2013": {
+                        "03": 15,
+                        "06": 5,
+                        "04": 18,
+                        "05": 10
+                    },
+                    "2012": {
+                        "11": 3,
+                        "10": 6,
+                        "12": 18,
+                        "07": 27,
+                        "08": 28,
+                        "09": 4
+                    }
+                },
+                "Lua": {
+                    "2014": {
+                        "03": 2,
+                        "04": 4
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 1,
+                        "01": 13
+                    },
+                    "2013": {
+                        "11": 9,
+                        "10": 11,
+                        "12": 10
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-16T01:11:08Z",
+                "gravatar_id": "ab2398c7b65da5c47d9997340ed2f13f",
+                "hireable": false,
+                "id": 506216,
+                "followers_url": "https://api.github.com/users/CMGS/followers",
+                "following_url": "https://api.github.com/users/CMGS/following{/other_user}",
+                "blog": "cmgs.me",
+                "etag": "\"f2baf707ac654cd9f3c2e11f84511b98\"",
+                "followers": 132,
+                "location": "BeiJing",
+                "type": "User",
+                "email": "ilskdw@gmail.com",
+                "public_repos": 31,
+                "events_url": "https://api.github.com/users/CMGS/events{/privacy}",
+                "company": "DouBan",
+                "gists_url": "https://api.github.com/users/CMGS/gists{/gist_id}",
+                "html_url": "https://github.com/CMGS",
+                "subscriptions_url": "https://api.github.com/users/CMGS/subscriptions",
+                "received_events_url": "https://api.github.com/users/CMGS/received_events",
+                "starred_url": "https://api.github.com/users/CMGS/starred{/owner}{/repo}",
+                "public_gists": 6,
+                "name": "CMGS",
+                "organizations_url": "https://api.github.com/users/CMGS/orgs",
+                "url": "https://api.github.com/users/CMGS",
+                "created_at": "2010-12-02T07:28:41Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/506216?",
+                "repos_url": "https://api.github.com/users/CMGS/repos",
+                "following": 7,
+                "login": "CMGS"
+            },
+            "_id": "cmgs",
+            "rank": {
+                "world": 1219,
+                "China": 9
+            }
+        },
+        {
+            "contrib": {
+                "Python": {
+                    "2014": {
+                        "03": 4,
+                        "04": 4
+                    },
+                    "2013": {
+                        "02": 11,
+                        "03": 89,
+                        "01": 9,
+                        "06": 23,
+                        "07": 14,
+                        "04": 34,
+                        "05": 66,
+                        "09": 24,
+                        "12": 19,
+                        "11": 4,
+                        "10": 1
+                    },
+                    "2012": {
+                        "11": 53,
+                        "03": 1,
+                        "12": 35,
+                        "06": 29,
+                        "07": 59,
+                        "04": 29,
+                        "05": 53,
+                        "08": 43,
+                        "09": 54,
+                        "10": 60
+                    }
+                },
+                "PHP": {
+                    "2012": {
+                        "08": 6
+                    }
+                },
+                "VimL": {
+                    "2014": {
+                        "03": 1
+                    },
+                    "2013": {
+                        "11": 1,
+                        "10": 1,
+                        "08": 1,
+                        "04": 1,
+                        "05": 1
+                    },
+                    "2012": {
+                        "10": 1,
+                        "06": 41,
+                        "07": 4,
+                        "04": 19,
+                        "05": 11,
+                        "08": 1
+                    }
+                }
+            },
+            "info": {
+                "bio": "",
+                "site_admin": false,
+                "updated_at": "2014-04-16T02:12:42Z",
+                "gravatar_id": "7867213891935e0d14872c65f9f3d013",
+                "hireable": false,
+                "id": 318150,
+                "followers_url": "https://api.github.com/users/frostyplanet/followers",
+                "following_url": "https://api.github.com/users/frostyplanet/following{/other_user}",
+                "blog": "http://frostyplanet.com",
+                "etag": "\"c30de042c02f35cc956c523ab38969a5\"",
+                "followers": 14,
+                "location": "Beijing, China",
+                "type": "User",
+                "email": "frostyplanet@gmail.com",
+                "public_repos": 15,
+                "events_url": "https://api.github.com/users/frostyplanet/events{/privacy}",
+                "company": "",
+                "gists_url": "https://api.github.com/users/frostyplanet/gists{/gist_id}",
+                "html_url": "https://github.com/frostyplanet",
+                "subscriptions_url": "https://api.github.com/users/frostyplanet/subscriptions",
+                "received_events_url": "https://api.github.com/users/frostyplanet/received_events",
+                "starred_url": "https://api.github.com/users/frostyplanet/starred{/owner}{/repo}",
+                "public_gists": 2,
+                "name": "Adam Ning",
+                "organizations_url": "https://api.github.com/users/frostyplanet/orgs",
+                "url": "https://api.github.com/users/frostyplanet",
+                "created_at": "2010-06-30T00:06:13Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/318150?",
+                "repos_url": "https://api.github.com/users/frostyplanet/repos",
+                "following": 15,
+                "login": "frostyplanet"
+            },
+            "_id": "frostyplanet",
+            "rank": {
+                "world": 1312,
+                "China": 10
+            }
+        }
+    ],
+    "pages": 491
+
+}

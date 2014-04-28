@@ -1,0 +1,892 @@
+{
+
+    "language": "CSS",
+    "country": "China",
+    "page_count": 10,
+    "page": 0,
+    "data": [
+        {
+            "contrib": {
+                "Python": {
+                    "2014": {
+                        "03": 58,
+                        "04": 29
+                    },
+                    "2013": {
+                        "11": 3
+                    }
+                },
+                "JavaScript": {
+                    "2014": {
+                        "02": 112,
+                        "03": 25
+                    },
+                    "2013": {
+                        "11": 34,
+                        "12": 1
+                    }
+                },
+                "R": {
+                    "2013": {
+                        "11": 42
+                    }
+                },
+                "Matlab": {
+                    "2013": {
+                        "11": 2,
+                        "10": 2,
+                        "09": 23
+                    }
+                },
+                "PHP": {
+                    "2014": {
+                        "02": 9,
+                        "03": 1,
+                        "01": 4
+                    }
+                },
+                "Ruby": {
+                    "2013": {
+                        "11": 6
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 80,
+                        "03": 283,
+                        "01": 5,
+                        "04": 109
+                    },
+                    "2013": {
+                        "11": 29,
+                        "10": 15,
+                        "12": 5
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-17T03:04:47Z",
+                "gravatar_id": "ae11c796984a5415726f78a70cd49e1a",
+                "hireable": true,
+                "id": 5379711,
+                "followers_url": "https://api.github.com/users/willard-yuan/followers",
+                "following_url": "https://api.github.com/users/willard-yuan/following{/other_user}",
+                "blog": "yuanyong.org",
+                "etag": "\"bb152f796d56743d93fbc73a67504f1b\"",
+                "followers": 10,
+                "location": "Xi'an China",
+                "type": "User",
+                "email": "yongyuanstu@gmail.com",
+                "public_repos": 76,
+                "events_url": "https://api.github.com/users/willard-yuan/events{/privacy}",
+                "company": "UCAS",
+                "gists_url": "https://api.github.com/users/willard-yuan/gists{/gist_id}",
+                "html_url": "https://github.com/willard-yuan",
+                "subscriptions_url": "https://api.github.com/users/willard-yuan/subscriptions",
+                "received_events_url": "https://api.github.com/users/willard-yuan/received_events",
+                "starred_url": "https://api.github.com/users/willard-yuan/starred{/owner}{/repo}",
+                "public_gists": 0,
+                "name": "",
+                "organizations_url": "https://api.github.com/users/willard-yuan/orgs",
+                "url": "https://api.github.com/users/willard-yuan",
+                "created_at": "2013-09-04T07:07:59Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/5379711?",
+                "repos_url": "https://api.github.com/users/willard-yuan/repos",
+                "following": 51,
+                "login": "willard-yuan"
+            },
+            "_id": "willard-yuan",
+            "rank": {
+                "world": 200,
+                "China": 1
+            }
+        },
+        {
+            "contrib": {
+                "JavaScript": {
+                    "2013": {
+                        "10": 2
+                    }
+                },
+                "Java": {
+                    "2013": {
+                        "10": 1
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 43,
+                        "03": 37,
+                        "01": 46,
+                        "04": 64
+                    },
+                    "2013": {
+                        "11": 33,
+                        "10": 190,
+                        "12": 58
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-16T11:35:17Z",
+                "gravatar_id": "e248e1edc932a227b264fc217d351adb",
+                "hireable": true,
+                "id": 5491410,
+                "followers_url": "https://api.github.com/users/tanghaodong25/followers",
+                "following_url": "https://api.github.com/users/tanghaodong25/following{/other_user}",
+                "blog": null,
+                "etag": "\"3e4ea7cd9ba516ff9fd257be8fc6fd20\"",
+                "followers": 1,
+                "location": "hefei china",
+                "type": "User",
+                "email": "tanghaodong25@gmail.com",
+                "public_repos": 28,
+                "events_url": "https://api.github.com/users/tanghaodong25/events{/privacy}",
+                "company": "ustc",
+                "gists_url": "https://api.github.com/users/tanghaodong25/gists{/gist_id}",
+                "html_url": "https://github.com/tanghaodong25",
+                "subscriptions_url": "https://api.github.com/users/tanghaodong25/subscriptions",
+                "received_events_url": "https://api.github.com/users/tanghaodong25/received_events",
+                "starred_url": "https://api.github.com/users/tanghaodong25/starred{/owner}{/repo}",
+                "public_gists": 0,
+                "name": "tanghaodong",
+                "organizations_url": "https://api.github.com/users/tanghaodong25/orgs",
+                "url": "https://api.github.com/users/tanghaodong25",
+                "created_at": "2013-09-19T02:54:44Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/5491410?",
+                "repos_url": "https://api.github.com/users/tanghaodong25/repos",
+                "following": 1,
+                "login": "tanghaodong25"
+            },
+            "_id": "tanghaodong25",
+            "rank": {
+                "world": 269,
+                "China": 2
+            }
+        },
+        {
+            "contrib": {
+                "Java": {
+                    "2013": {
+                        "02": 2,
+                        "03": 3
+                    },
+                    "2012": {
+                        "11": 1,
+                        "10": 1
+                    }
+                },
+                "Scala": {
+                    "2014": {
+                        "01": 7
+                    },
+                    "2013": {
+                        "02": 10,
+                        "03": 1
+                    }
+                },
+                "Python": {
+                    "2013": {
+                        "01": 1
+                    }
+                },
+                "JavaScript": {
+                    "2014": {
+                        "02": 4,
+                        "01": 62
+                    },
+                    "2013": {
+                        "11": 1,
+                        "03": 1,
+                        "12": 4,
+                        "06": 3,
+                        "07": 26,
+                        "09": 10
+                    }
+                },
+                "Objective-C": {
+                    "2013": {
+                        "02": 19,
+                        "03": 4,
+                        "01": 4,
+                        "04": 4
+                    },
+                    "2012": {
+                        "10": 2,
+                        "12": 2
+                    }
+                },
+                "PHP": {
+                    "2013": {
+                        "02": 6,
+                        "03": 1
+                    }
+                },
+                "Ruby": {
+                    "2013": {
+                        "04": 2,
+                        "05": 7
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 28,
+                        "03": 12,
+                        "01": 32,
+                        "04": 3
+                    },
+                    "2013": {
+                        "10": 51,
+                        "08": 5,
+                        "09": 263,
+                        "12": 75
+                    }
+                }
+            },
+            "info": {
+                "bio": "",
+                "site_admin": false,
+                "updated_at": "2014-04-16T17:27:42Z",
+                "gravatar_id": "fb6e9abf5b40dd3f362c73283ad3a15f",
+                "hireable": true,
+                "id": 1282617,
+                "followers_url": "https://api.github.com/users/haoch/followers",
+                "following_url": "https://api.github.com/users/haoch/following{/other_user}",
+                "blog": "http://haoch.me",
+                "etag": "\"45776a5c4c8de03f3e2140e52ee812fa\"",
+                "followers": 6,
+                "location": "Shanghai, China",
+                "type": "User",
+                "email": "cn.haochen@gmail.com",
+                "public_repos": 42,
+                "events_url": "https://api.github.com/users/haoch/events{/privacy}",
+                "company": "eBay Inc, Analytics and Engineering",
+                "gists_url": "https://api.github.com/users/haoch/gists{/gist_id}",
+                "html_url": "https://github.com/haoch",
+                "subscriptions_url": "https://api.github.com/users/haoch/subscriptions",
+                "received_events_url": "https://api.github.com/users/haoch/received_events",
+                "starred_url": "https://api.github.com/users/haoch/starred{/owner}{/repo}",
+                "public_gists": 31,
+                "name": "Hao",
+                "organizations_url": "https://api.github.com/users/haoch/orgs",
+                "url": "https://api.github.com/users/haoch",
+                "created_at": "2011-12-23T18:01:12Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1282617?",
+                "repos_url": "https://api.github.com/users/haoch/repos",
+                "following": 18,
+                "login": "haoch"
+            },
+            "_id": "haoch",
+            "rank": {
+                "world": 259,
+                "China": 3
+            }
+        },
+        {
+            "contrib": {
+                "C": {
+                    "2013": {
+                        "11": 19,
+                        "01": 1,
+                        "06": 1,
+                        "07": 6,
+                        "04": 1,
+                        "05": 2,
+                        "08": 1,
+                        "09": 30
+                    },
+                    "2012": {
+                        "11": 31,
+                        "10": 24,
+                        "12": 2,
+                        "09": 8
+                    }
+                },
+                "Shell": {
+                    "2014": {
+                        "02": 1
+                    }
+                },
+                "Java": {
+                    "2014": {
+                        "02": 7
+                    },
+                    "2013": {
+                        "03": 1,
+                        "01": 1,
+                        "10": 3
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "03": 1,
+                        "01": 1
+                    },
+                    "2013": {
+                        "11": 5,
+                        "10": 5,
+                        "08": 1,
+                        "12": 1
+                    },
+                    "2012": {
+                        "11": 13
+                    }
+                },
+                "VimL": {
+                    "2013": {
+                        "01": 1,
+                        "07": 4,
+                        "05": 4
+                    },
+                    "2012": {
+                        "11": 1,
+                        "03": 1,
+                        "10": 5,
+                        "05": 1
+                    }
+                },
+                "C++": {
+                    "2014": {
+                        "03": 13,
+                        "01": 3,
+                        "04": 2
+                    },
+                    "2013": {
+                        "08": 4,
+                        "06": 1,
+                        "07": 5,
+                        "05": 1
+                    }
+                },
+                "Ruby": {
+                    "2012": {
+                        "03": 34,
+                        "06": 77,
+                        "07": 82,
+                        "04": 54,
+                        "05": 98,
+                        "08": 6,
+                        "09": 29
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 63,
+                        "03": 93,
+                        "01": 157,
+                        "04": 24
+                    },
+                    "2013": {
+                        "12": 49,
+                        "08": 9,
+                        "09": 58
+                    }
+                }
+            },
+            "info": {
+                "bio": "[c/c++|make|vim] er",
+                "site_admin": false,
+                "updated_at": "2014-04-16T17:25:34Z",
+                "gravatar_id": "f57e15f428ad44bad39c07b0dbfd9e9b",
+                "hireable": true,
+                "id": 193691,
+                "followers_url": "https://api.github.com/users/xanpeng/followers",
+                "following_url": "https://api.github.com/users/xanpeng/following{/other_user}",
+                "blog": "xanpeng.github.io",
+                "etag": "\"daa5b6fc016ced6119fae1f8d8193c60\"",
+                "followers": 17,
+                "location": "Beijing, China",
+                "type": "User",
+                "email": "xanpeng@gmail.com",
+                "public_repos": 8,
+                "events_url": "https://api.github.com/users/xanpeng/events{/privacy}",
+                "company": "",
+                "gists_url": "https://api.github.com/users/xanpeng/gists{/gist_id}",
+                "html_url": "https://github.com/xanpeng",
+                "subscriptions_url": "https://api.github.com/users/xanpeng/subscriptions",
+                "received_events_url": "https://api.github.com/users/xanpeng/received_events",
+                "starred_url": "https://api.github.com/users/xanpeng/starred{/owner}{/repo}",
+                "public_gists": 33,
+                "name": "xanpeng",
+                "organizations_url": "https://api.github.com/users/xanpeng/orgs",
+                "url": "https://api.github.com/users/xanpeng",
+                "created_at": "2010-02-01T08:12:21Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/193691?",
+                "repos_url": "https://api.github.com/users/xanpeng/repos",
+                "following": 66,
+                "login": "xanpeng"
+            },
+            "_id": "xanpeng",
+            "rank": {
+                "world": 291,
+                "China": 4
+            }
+        },
+        {
+            "contrib": {
+                "Python": {
+                    "2014": {
+                        "01": 1
+                    },
+                    "2013": {
+                        "11": 5,
+                        "10": 6,
+                        "01": 6,
+                        "06": 2,
+                        "08": 1,
+                        "09": 4,
+                        "12": 1
+                    },
+                    "2012": {
+                        "12": 1
+                    }
+                },
+                "JavaScript": {
+                    "2013": {
+                        "06": 64,
+                        "07": 11,
+                        "04": 268,
+                        "05": 60
+                    }
+                },
+                "PHP": {
+                    "2013": {
+                        "02": 61,
+                        "03": 391,
+                        "04": 27
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 4,
+                        "03": 4,
+                        "01": 2,
+                        "04": 6
+                    },
+                    "2013": {
+                        "11": 58,
+                        "10": 71,
+                        "12": 4,
+                        "07": 13,
+                        "08": 235,
+                        "09": 41
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-11T11:22:35Z",
+                "gravatar_id": "5c9ed3047cd98a85e8592761a70482cb",
+                "hireable": true,
+                "id": 3031425,
+                "followers_url": "https://api.github.com/users/lingyunyumo/followers",
+                "following_url": "https://api.github.com/users/lingyunyumo/following{/other_user}",
+                "blog": "taoxiaolei.cn",
+                "etag": "\"67847b5303f06ecbc9695526e3f8774f\"",
+                "followers": 2,
+                "location": "Hangzhou, China",
+                "type": "User",
+                "email": null,
+                "public_repos": 3,
+                "events_url": "https://api.github.com/users/lingyunyumo/events{/privacy}",
+                "company": null,
+                "gists_url": "https://api.github.com/users/lingyunyumo/gists{/gist_id}",
+                "html_url": "https://github.com/lingyunyumo",
+                "subscriptions_url": "https://api.github.com/users/lingyunyumo/subscriptions",
+                "received_events_url": "https://api.github.com/users/lingyunyumo/received_events",
+                "starred_url": "https://api.github.com/users/lingyunyumo/starred{/owner}{/repo}",
+                "public_gists": 0,
+                "name": "Tao Xiaolei",
+                "organizations_url": "https://api.github.com/users/lingyunyumo/orgs",
+                "url": "https://api.github.com/users/lingyunyumo",
+                "created_at": "2012-12-13T05:54:57Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/3031425?",
+                "repos_url": "https://api.github.com/users/lingyunyumo/repos",
+                "following": 0,
+                "login": "lingyunyumo"
+            },
+            "_id": "lingyunyumo",
+            "rank": {
+                "world": 321,
+                "China": 5
+            }
+        },
+        {
+            "contrib": {
+                "C": {
+                    "2013": {
+                        "11": 10,
+                        "12": 12
+                    }
+                },
+                "Java": {
+                    "2013": {
+                        "09": 13
+                    }
+                },
+                "Python": {
+                    "2014": {
+                        "04": 3
+                    },
+                    "2013": {
+                        "11": 3,
+                        "10": 36,
+                        "12": 1,
+                        "09": 4
+                    }
+                },
+                "JavaScript": {
+                    "2014": {
+                        "01": 1
+                    }
+                },
+                "Erlang": {
+                    "2013": {
+                        "10": 5
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 2,
+                        "03": 20,
+                        "01": 15,
+                        "04": 19
+                    },
+                    "2013": {
+                        "11": 49,
+                        "10": 161,
+                        "12": 17,
+                        "09": 142
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-11T13:04:21Z",
+                "gravatar_id": "8c2cdb0f1f063f073b1bb14fcf197492",
+                "hireable": true,
+                "id": 5398655,
+                "followers_url": "https://api.github.com/users/zuojie/followers",
+                "following_url": "https://api.github.com/users/zuojie/following{/other_user}",
+                "blog": null,
+                "etag": "\"824dffd3d7d6eff5fa2a8bc330143b67\"",
+                "followers": 5,
+                "location": "Beijing.CN",
+                "type": "User",
+                "email": "pengzuojie@gmail.com",
+                "public_repos": 28,
+                "events_url": "https://api.github.com/users/zuojie/events{/privacy}",
+                "company": "Tencent",
+                "gists_url": "https://api.github.com/users/zuojie/gists{/gist_id}",
+                "html_url": "https://github.com/zuojie",
+                "subscriptions_url": "https://api.github.com/users/zuojie/subscriptions",
+                "received_events_url": "https://api.github.com/users/zuojie/received_events",
+                "starred_url": "https://api.github.com/users/zuojie/starred{/owner}{/repo}",
+                "public_gists": 0,
+                "name": "zuojiepeng",
+                "organizations_url": "https://api.github.com/users/zuojie/orgs",
+                "url": "https://api.github.com/users/zuojie",
+                "created_at": "2013-09-06T09:40:58Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/5398655?",
+                "repos_url": "https://api.github.com/users/zuojie/repos",
+                "following": 17,
+                "login": "zuojie"
+            },
+            "_id": "zuojie",
+            "rank": {
+                "world": 339,
+                "China": 6
+            }
+        },
+        {
+            "contrib": {
+                "Logos": {
+                    "2013": {
+                        "12": 2
+                    }
+                },
+                "C": {
+                    "2014": {
+                        "01": 5
+                    }
+                },
+                "Emacs Lisp": {
+                    "2013": {
+                        "11": 4
+                    }
+                },
+                "JavaScript": {
+                    "2013": {
+                        "09": 12,
+                        "06": 9,
+                        "05": 1
+                    }
+                },
+                "PHP": {
+                    "2014": {
+                        "01": 1
+                    }
+                },
+                "Ruby": {
+                    "2013": {
+                        "10": 6,
+                        "09": 8
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "01": 50,
+                        "04": 14
+                    },
+                    "2013": {
+                        "11": 56,
+                        "10": 266,
+                        "12": 18,
+                        "09": 6
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-17T04:55:26Z",
+                "gravatar_id": "6a3f58bfa0de943e9e72386a5fbf5c21",
+                "hireable": false,
+                "id": 3971467,
+                "followers_url": "https://api.github.com/users/HikoQiu/followers",
+                "following_url": "https://api.github.com/users/HikoQiu/following{/other_user}",
+                "blog": "http://www.iamhiko.com",
+                "etag": "\"278f9866d22312335a88c85752728431\"",
+                "followers": 4,
+                "location": "Guangzhou",
+                "type": "User",
+                "email": "hiko.qiu@gmail.com",
+                "public_repos": 8,
+                "events_url": "https://api.github.com/users/HikoQiu/events{/privacy}",
+                "company": "coming ",
+                "gists_url": "https://api.github.com/users/HikoQiu/gists{/gist_id}",
+                "html_url": "https://github.com/HikoQiu",
+                "subscriptions_url": "https://api.github.com/users/HikoQiu/subscriptions",
+                "received_events_url": "https://api.github.com/users/HikoQiu/received_events",
+                "starred_url": "https://api.github.com/users/HikoQiu/starred{/owner}{/repo}",
+                "public_gists": 17,
+                "name": "HikoQiu",
+                "organizations_url": "https://api.github.com/users/HikoQiu/orgs",
+                "url": "https://api.github.com/users/HikoQiu",
+                "created_at": "2013-03-26T05:33:53Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/3971467?",
+                "repos_url": "https://api.github.com/users/HikoQiu/repos",
+                "following": 16,
+                "login": "HikoQiu"
+            },
+            "_id": "hikoqiu",
+            "rank": {
+                "world": 358,
+                "China": 7
+            }
+        },
+        {
+            "contrib": {
+                "JavaScript": {
+                    "2014": {
+                        "02": 25,
+                        "03": 4
+                    },
+                    "2013": {
+                        "11": 1
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 29,
+                        "03": 43,
+                        "01": 52,
+                        "04": 6
+                    },
+                    "2013": {
+                        "11": 71,
+                        "10": 143,
+                        "12": 51
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-14T05:43:40Z",
+                "gravatar_id": "e43425aad4de30d628ad5c89e7c57a8a",
+                "hireable": true,
+                "id": 2698003,
+                "followers_url": "https://api.github.com/users/barretlee/followers",
+                "following_url": "https://api.github.com/users/barretlee/following{/other_user}",
+                "blog": "http://hustskyking.cnblogs.com",
+                "etag": "\"8b93bbf2555b10edf278fad2a4e410ff\"",
+                "followers": 27,
+                "location": "Hangzhou,China",
+                "type": "User",
+                "email": "barret.china@gmail.com",
+                "public_repos": 20,
+                "events_url": "https://api.github.com/users/barretlee/events{/privacy}",
+                "company": "TaobaoUED",
+                "gists_url": "https://api.github.com/users/barretlee/gists{/gist_id}",
+                "html_url": "https://github.com/barretlee",
+                "subscriptions_url": "https://api.github.com/users/barretlee/subscriptions",
+                "received_events_url": "https://api.github.com/users/barretlee/received_events",
+                "starred_url": "https://api.github.com/users/barretlee/starred{/owner}{/repo}",
+                "public_gists": 5,
+                "name": "Jing Lee",
+                "organizations_url": "https://api.github.com/users/barretlee/orgs",
+                "url": "https://api.github.com/users/barretlee",
+                "created_at": "2012-11-01T10:23:20Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/2698003?",
+                "repos_url": "https://api.github.com/users/barretlee/repos",
+                "following": 24,
+                "login": "barretlee"
+            },
+            "_id": "barretlee",
+            "rank": {
+                "world": 374,
+                "China": 8
+            }
+        },
+        {
+            "contrib": {
+                "JavaScript": {
+                    "2013": {
+                        "08": 3,
+                        "09": 8,
+                        "07": 25
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "02": 4,
+                        "03": 158,
+                        "01": 2,
+                        "04": 195
+                    },
+                    "2013": {
+                        "10": 15,
+                        "12": 1,
+                        "09": 12
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-15T12:54:17Z",
+                "gravatar_id": "7299cfb7415c83033f2a9aa9f635b2c6",
+                "hireable": true,
+                "id": 5220740,
+                "followers_url": "https://api.github.com/users/tcitry/followers",
+                "following_url": "https://api.github.com/users/tcitry/following{/other_user}",
+                "blog": "http://yindongliang.com",
+                "etag": "\"fb2d1704e233130ac6118b926d6a9a34\"",
+                "followers": 1,
+                "location": "大连",
+                "type": "User",
+                "email": "tcitry@gmail.com",
+                "public_repos": 1,
+                "events_url": "https://api.github.com/users/tcitry/events{/privacy}",
+                "company": "",
+                "gists_url": "https://api.github.com/users/tcitry/gists{/gist_id}",
+                "html_url": "https://github.com/tcitry",
+                "subscriptions_url": "https://api.github.com/users/tcitry/subscriptions",
+                "received_events_url": "https://api.github.com/users/tcitry/received_events",
+                "starred_url": "https://api.github.com/users/tcitry/starred{/owner}{/repo}",
+                "public_gists": 1,
+                "name": "",
+                "organizations_url": "https://api.github.com/users/tcitry/orgs",
+                "url": "https://api.github.com/users/tcitry",
+                "created_at": "2013-08-13T10:01:22Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/5220740?",
+                "repos_url": "https://api.github.com/users/tcitry/repos",
+                "following": 8,
+                "login": "tcitry"
+            },
+            "_id": "tcitry",
+            "rank": {
+                "world": 411,
+                "China": 9
+            }
+        },
+        {
+            "contrib": {
+                "JavaScript": {
+                    "2014": {
+                        "02": 2,
+                        "04": 34
+                    },
+                    "2013": {
+                        "11": 6,
+                        "12": 2
+                    }
+                },
+                "Ruby": {
+                    "2014": {
+                        "03": 1
+                    },
+                    "2013": {
+                        "07": 1
+                    }
+                },
+                "CSS": {
+                    "2014": {
+                        "03": 159,
+                        "04": 215
+                    },
+                    "2013": {
+                        "10": 3
+                    }
+                }
+            },
+            "info": {
+                "bio": null,
+                "site_admin": false,
+                "updated_at": "2014-04-17T07:15:15Z",
+                "gravatar_id": "e4a0c721af50c4e40fba8718600349bb",
+                "hireable": false,
+                "id": 1681045,
+                "followers_url": "https://api.github.com/users/materliu/followers",
+                "following_url": "https://api.github.com/users/materliu/following{/other_user}",
+                "blog": "http://materliu.github.io",
+                "etag": "\"ce876cbb94cc48af6946afb8c7c61857\"",
+                "followers": 11,
+                "location": "Shenzhen, china",
+                "type": "User",
+                "email": "materliu@gmail.com",
+                "public_repos": 8,
+                "events_url": "https://api.github.com/users/materliu/events{/privacy}",
+                "company": "Tencent.com",
+                "gists_url": "https://api.github.com/users/materliu/gists{/gist_id}",
+                "html_url": "https://github.com/materliu",
+                "subscriptions_url": "https://api.github.com/users/materliu/subscriptions",
+                "received_events_url": "https://api.github.com/users/materliu/received_events",
+                "starred_url": "https://api.github.com/users/materliu/starred{/owner}{/repo}",
+                "public_gists": 2,
+                "name": "刘炬光",
+                "organizations_url": "https://api.github.com/users/materliu/orgs",
+                "url": "https://api.github.com/users/materliu",
+                "created_at": "2012-04-26T07:23:23Z",
+                "avatar_url": "https://avatars.githubusercontent.com/u/1681045?",
+                "repos_url": "https://api.github.com/users/materliu/repos",
+                "following": 1,
+                "login": "materliu"
+            },
+            "_id": "materliu",
+            "rank": {
+                "world": 433,
+                "China": 10
+            }
+        }
+    ],
+    "pages": 468
+
+}
