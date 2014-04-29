@@ -4,11 +4,23 @@
 angular.module('rankApp', ['ngRoute'])
   .config ($routeProvider, $locationProvider) ->
     $routeProvider
-      .when '/ranks.html',
-        templateUrl: 'rank/views/rank.html',
+      .when '/',
+        templateUrl: 'views/rank.html',
         controller: 'RankCtrl'
-      .when '/info/:lang/:name',
-        templateUrl: 'rank/views/detail.html',
+      .when '/rank/:lang',
+        templateUrl: 'views/rank.html',
+        controller: 'RankCtrl'
+      .when '/popular',
+        templateUrl: 'views/rank.html',
+        controller: 'RankCtrl'
+      .when '/interesting',
+        templateUrl: 'views/coming.html',
+        controller: 'ComingCtrl'
+      .when '/new',
+        templateUrl: 'views/coming.html',
+        controller: 'ComingCtrl'
+      .when '/info/:name',
+        templateUrl: 'views/detail.html',
         controller: 'DetailCtrl'
     $locationProvider.html5Mode true
 

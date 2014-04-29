@@ -2,9 +2,9 @@
       <header>
         <h1>Github Leaderboard</h1>
         <ul id="page">
-          <li data-val="popular" class="type-b selectable selected"><a href="#" class="type">Popular</a></li>
-          <li data-val="interesting" class="type-b selectable "><a href="#" class="type">Interesting</a></li>
-          <li data-val="new" class="type-b selectable "><a href="#" class="type">New</a></li>
+          <li data-val="popular" class="type-b selectable" ng-class="{selected:currentTab=='popular'}"><a href="javascript:void(0)" class="type" ng-click="changeTab('popular')">Popular</a></li>
+          <li data-val="interesting" class="type-b selectable" ng-class="{selected:currentTab=='interesting'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('interesting')">Interesting</a></li>
+          <li data-val="new" class="type-b selectable" ng-class="{selected:currentTab=='new'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('new')">New</a></li>
         </ul>
         <ul id="filter">
           <li class="selected">Languages</li>
@@ -14,7 +14,7 @@
       </header>
 
       <div id="loading" ng-show="loading">
-        <img src="tags_files/loading.gif" alt="loading">
+        <img src="images/loading.gif" alt="loading">
       </div>
 
       <section id="main">
@@ -44,7 +44,7 @@ google_ad_height = 600;</script>
           </section -->
         </section>
 
-        <section  id="modules" ng-view="">
+        <section  id="{{sectionId}}" ng-view="" >
         </section>
         <!--section id="modules" ng-controller="RankCtrl" ng-show="!loading">
           <ol>
@@ -66,10 +66,8 @@ google_ad_height = 600;</script>
       </section>
 
       <footer>
-        <p class="tm">Node.js
- is an official trademark of Joyent. This website is not formally 
-related to or endorsed by the official Joyent Node.js open source or 
-commercial project.</p>
-        <p class="links"><img src="tags_files/chip-d41d8cd98f00b204e9800998ecf8427e.png" alt="corruptmem logo">&nbsp; Created by corruptmem - <a href="http://corruptmem.org/">Web</a> - <a href="mailto:me@corruptmem.org">Email</a> -  <a href="http://github.com/corruptmem">GitHub</a> - <a href="http://twitter.com/corruptmem">Twitter</a></p>
+        <p class="tm">Github is an official trademark of github.com. This website is not formally 
+related to or endorsed by any companies or communities.</p>
+        <p class="links"><img src="images/logo.png" alt="my logo">&nbsp; Created by gitman - <a href="http://gitman.org/">Web</a> - <a href="mailto:me@gitman.org">Email</a> -  <a href="http://github.com/gitman">GitHub</a> - <a href="http://twitter.com/gitman">Twitter</a></p>
       </footer>
     </div>
