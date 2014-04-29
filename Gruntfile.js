@@ -390,7 +390,13 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
-    'concurrent:dist',
+    'coffee',
+    'compass:dist',
+    'copy:styles',
+    'imagemin',
+    'svgmin',
+    'htmlmin',
+    //'concurrent:dist',
     'autoprefixer',
     'concat',
     'copy:dist',
@@ -407,4 +413,7 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('heroku:development', ['clean:server', 'concurrent:server', 'autoprefixer']);
+  grunt.registerTask('heroku:production', ['build']);
 };

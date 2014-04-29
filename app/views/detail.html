@@ -5,20 +5,47 @@
         <img ng-src="{{person.info.avatar_url}}" style="width:150px">
       </a>
     </div>
-    <h2><span class="id">{{$parent.getName(person)}}</h2>
-    <p class="desc">An easy way to expose properties on a module from a package.json </p>
+    <h2><span class="id">{{person.name}}</h2>
+    <p class="desc">{{person._desc}}</p>
   </div>
 
   <div id="bottom">
-    <h3>usage </h3>
+    <!--h3>usage </h3>
     <p class="npm"><span class="shell">$ </span>npm install pkginfo</p>
-    <h3>links</h3>
+    <h3>Location</h3>
     <ul>
-      <li><a href="https://npmjs.org/package/pkginfo">npm registry</a>
+      <li>{{person.info.location}}
+      </li>
+    </ul-->
+
+    <h3 class="githubTitle">github</h3>
+    <ul>
+      <li><a href="{{person.info.html_url}}">{{person.info.html_url}}</a>
       </li>
     </ul>
-    <h3 class="githubTitle">github</h3>
 
+    <h3>Expertise</h3>
+    <div id="lang-pie" class="mychart"></div>
+    <ul>
+      <li ng-repeat="value in person._lang">{{value[0]}}: {{value[1]}}</a>
+      </li>
+    </ul>
+
+    <h3 class="githubTitle">Hot Repos</h3>
+    <!--ul>
+      <li ng-repeat="repo in person.repos">#{{repo.events}} - <a href="https://github.com/{{repo.repo}}">{{repo.repo}}</a>
+      </li>
+    </ul-->
+    <table class="detail-item">
+      <tr ng-repeat="repo in person.repos">
+        <td>&nbsp;</td>
+        <td><li>#{{repo.events}}</li></td>
+        <td>-</td>
+        <td><a href="https://github.com/{{repo.repo}}">{{repo.repo}}</a></td>
+      </tr>
+    </table>
+
+    <!--h3 class="githubTitle">github</h3>
     <section class="github">
       <p>
         <iframe width="170" scrolling="0" height="30" frameborder="0" allowtransparency="" src="http://ghbtns.com/github-btn.html?user=indexzero&amp;repo=pkginfo&amp;type=watch&amp;size=large&amp;count=true">
@@ -31,12 +58,36 @@
       <p>
         <a href="https://api.github.com/repos/indexzero/node-pkginfo">https://api.github.com/repos/indexzero/node-pkginfo</a>
       </p>
-    </section>
+    </section-->
 
-    <h3 class="tags">tags</h3>
+<hr>
+
+    <h3 class="githubTitle">Historical Contribution</h3>
+    <div id="m-contrib-con" class="mychart">monthly contribution
+    </div>
+    
+    <h3 class="githubTitle">Hourly Contribution</h3>
+    <div id="h-contrib-con" class="mychart">hourly contribution
+    </div>
+<hr>
+    <h3 class="githubTitle">Rank</h3>
+    <table width="100%" class="detail-item">
+      <tr>
+        <th align="left">Language</th>
+        <th align="left">China #</th>
+        <th align="left">World #</th>
+      </tr>
+      <tr ng-repeat="rank in person._rankChina">
+        <td>{{rank[0]}}</td>
+        <td>{{rank[1]}}</td>
+        <td>{{getWorldRank(rank[0])}}</td>
+      </tr>
+    </table>
+
+    <!--h3 class="tags">tags</h3>
     <ul class="tags">
       <li class="tag"><a href="/tags/info">info</a></li>
       <li class="tag"><a href="/tags/tools">tools</a></li>
       <li class="tag"><a href="/tags/package.json">package.json</a></li>
-    </ul>
+    </ul -->
   </div>

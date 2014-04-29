@@ -76,3 +76,12 @@ footer .tm{color:#444;text-shadow:1px 1px 1px #eee}
 footer .links{color:#222;text-shadow:1px 1px 1px #ccc}
 #loading{position:fixed;margin-left:-200px;top:40%;left:50%;width:400px;text-align:left;opacity:0;filter:alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";-webkit-transition:opacity .2s ease-in-out;-moz-transition:opacity .2s ease-in-out;-o-transition:opacity .2s ease-in-out;-ms-transition:opacity .2s ease-in-out;transition:opacity .2s ease-in-out;-webkit-transition-delay:.4s;-moz-transition-delay:.4s;-o-transition-delay:.4s;-ms-transition-delay:.4s;transition-delay:.4s}
 #loading.visible{opacity:1;-ms-filter:none;filter:none}
+
+div.mychart map img {
+  height: 1px;
+  width: 1px;
+}
+
+table.detail-item {
+  margin-left: 20px
+}

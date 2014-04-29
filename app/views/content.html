@@ -2,9 +2,9 @@
       <header>
         <h1>Github Leaderboard</h1>
         <ul id="page">
-          <li data-val="popular" class="type-b selectable selected"><a href="#" class="type">Popular</a></li>
-          <li data-val="interesting" class="type-b selectable "><a href="#" class="type">Interesting</a></li>
-          <li data-val="new" class="type-b selectable "><a href="#" class="type">New</a></li>
+          <li data-val="popular" class="type-b selectable" ng-class="{selected:currentTab=='popular'}"><a href="javascript:void(0)" class="type" ng-click="changeTab('popular')">Popular</a></li>
+          <li data-val="interesting" class="type-b selectable" ng-class="{selected:currentTab=='interesting'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('interesting')">Interesting</a></li>
+          <li data-val="new" class="type-b selectable" ng-class="{selected:currentTab=='new'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('new')">New</a></li>
         </ul>
         <ul id="filter">
           <li class="selected">Languages</li>
@@ -44,7 +44,7 @@ google_ad_height = 600;</script>
           </section -->
         </section>
 
-        <section  id="modules" ng-view="">
+        <section  id="{{sectionId}}" ng-view="" >
         </section>
         <!--section id="modules" ng-controller="RankCtrl" ng-show="!loading">
           <ol>

@@ -13,6 +13,12 @@ angular.module('rankApp', ['ngRoute'])
       .when '/popular',
         templateUrl: 'views/rank.html',
         controller: 'RankCtrl'
+      .when '/interesting',
+        templateUrl: 'views/coming.html',
+        controller: 'ComingCtrl'
+      .when '/new',
+        templateUrl: 'views/coming.html',
+        controller: 'ComingCtrl'
       .when '/info/:name',
         templateUrl: 'views/detail.html',
         controller: 'DetailCtrl'

@@ -11,6 +11,4 @@ exports.awesomeThings = (req, res) ->
     "Express"
   ]
 
-
-
 exports.utils = require("./utils")
