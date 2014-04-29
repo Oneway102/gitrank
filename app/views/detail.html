@@ -1,8 +1,8 @@
-<section id="moduleInfo">
+
   <div id="top">
     <div class="owner">
-      <a href="mailto:charlie.robbins@gmail.com">
-        <img src="https://secure.gravatar.com/avatar/d43e8ea63b61e7669ded5b9d3c2e980f?s=140&amp;d=retro">
+      <a href="mailto:{{person.info.email}}">
+        <img ng-src="{{person.info.avatar_url}}" style="width:150px">
       </a>
     </div>
     <h2><span class="id">{{$parent.getName(person)}}</h2>
@@ -40,5 +40,3 @@
       <li class="tag"><a href="/tags/package.json">package.json</a></li>
     </ul>
   </div>
-
-</section>

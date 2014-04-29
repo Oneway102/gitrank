@@ -3,7 +3,8 @@
 angular.module('rankApp')
   # $route is needed here to as our ng-view in warpped by ng-include and 
   # we need to ensure $route is ready beforehand.
-  .controller 'AppCtrl', ($rootScope, $scope, $route, $http) ->
+  .controller 'AppCtrl', ($rootScope, $scope, $route, $http, $location) ->
+    $scope.currentTab = "popular"
     $scope.loading = true
     $scope.languages = []
     $scope.rank = {}
@@ -20,6 +21,10 @@ angular.module('rankApp')
     $http.get("/api/languages")
       .success (data) ->
         $scope.languages = data
+    $scope.changeTab = (tab) ->
+      $scope.currentTab = tab
+      $location.path "/" + tab
+      return
     getTagValue = ($event) ->
       realTarget = $event.target
       if $event.target.tagName is "LI"
