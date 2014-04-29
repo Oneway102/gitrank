@@ -1,6 +1,6 @@
 'use strict';
 
-API_HOST = "192.168.7.200"
+API_HOST = "ats.borqs.com"
 
 JSON_CALLBACK3 = (data) ->
   aaa = data
