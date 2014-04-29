@@ -10,6 +10,7 @@ angular.module('rankApp')
   # we need to ensure $route is ready beforehand.
   .controller 'AppCtrl', ($rootScope, $scope, $route, $http, $location) ->
     $scope.currentTab = "popular"
+    $scope.loading = true
     $scope.languages = []
     #$http.get("/api/languages")
     #$http.jsonp("http://#{API_HOST}/github/languages?callback=JSON_CALLBACK")
@@ -54,6 +55,13 @@ angular.module('rankApp')
         .error () ->
           $scope.loading = false
     retrieveRank()
+    $http.get("/api/languages")
+      .success (data) ->
+        $scope.languages = data
+    $scope.changeTab = (tab) ->
+      $scope.currentTab = tab
+      $location.path "/" + tab
+      return
     getTagValue = ($event) ->
       realTarget = $event.target
       if $event.target.tagName is "LI"
