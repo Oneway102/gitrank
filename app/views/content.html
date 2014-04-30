@@ -7,7 +7,7 @@
           <li data-val="new" class="type-b selectable" ng-class="{selected:currentTab=='new'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('new')">New</a></li>
         </ul>
         <ul id="filter">
-          <li class="selected">Languages</li>
+          <li class="selected">{{getTagsCaption()}}</li>
         </ul>
 
         <div class="clearfix"></div>
@@ -20,8 +20,11 @@
       <section id="main">
         <section id="right">
           <section id="tags">
-            <div id="searchTags"><input placeholder="Find language..." type="text"></div>
-            <ul>
+            <div id="searchTags" ng-show="showLanguageTag()">
+              <input placeholder="Type your github ID here..." type="text" id="githubId" ng-model="githubId" ng-keypress="onKeyPress($event)">
+              <button id="searchBtn" ng-click="searchUser()">Search</button>
+            </div>
+            <ul ng-show="!showLanguageTag()">
               <li data-val="{{lang}}" class="tag-b selectable" ng-repeat="lang in languages" ng-click="setLanguage($event, lang)" ng-class="{selected:lang==langFilter}">
                 <a href="javascript:void(0)" class="tag">{{lang}}</a>
               </li>

@@ -10,14 +10,6 @@
   </div>
 
   <div id="bottom">
-    <!--h3>usage </h3>
-    <p class="npm"><span class="shell">$ </span>npm install pkginfo</p>
-    <h3>Location</h3>
-    <ul>
-      <li>{{person.info.location}}
-      </li>
-    </ul-->
-
     <h3 class="githubTitle">github</h3>
     <ul>
       <li><a href="{{person.info.html_url}}">{{person.info.html_url}}</a>
@@ -32,10 +24,6 @@
     </ul>
 
     <h3 class="githubTitle">Hot Repos</h3>
-    <!--ul>
-      <li ng-repeat="repo in person.repos">#{{repo.events}} - <a href="https://github.com/{{repo.repo}}">{{repo.repo}}</a>
-      </li>
-    </ul-->
     <table class="detail-item">
       <tr ng-repeat="repo in person.repos">
         <td>&nbsp;</td>
@@ -45,31 +33,14 @@
       </tr>
     </table>
 
-    <!--h3 class="githubTitle">github</h3>
-    <section class="github">
-      <p>
-        <iframe width="170" scrolling="0" height="30" frameborder="0" allowtransparency="" src="http://ghbtns.com/github-btn.html?user=indexzero&amp;repo=pkginfo&amp;type=watch&amp;size=large&amp;count=true">
-        </iframe>
-      </p>
-      <p>
-        <iframe width="170" scrolling="0" height="30" frameborder="0" allowtransparency="" src="http://ghbtns.com/github-btn.html?user=indexzero&amp;repo=pkginfo&amp;type=fork&amp;size=large&amp;count=true">
-        </iframe>
-      </p>
-      <p>
-        <a href="https://api.github.com/repos/indexzero/node-pkginfo">https://api.github.com/repos/indexzero/node-pkginfo</a>
-      </p>
-    </section-->
-
-<hr>
-
     <h3 class="githubTitle">Historical Contribution</h3>
-    <div id="m-contrib-con" class="mychart">monthly contribution
+    <div id="m-contrib-con" class="mychart">monthly contribution chart
     </div>
     
     <h3 class="githubTitle">Hourly Contribution</h3>
-    <div id="h-contrib-con" class="mychart">hourly contribution
+    <div id="h-contrib-con" class="mychart">hourly contribution chart
     </div>
-<hr>
+
     <h3 class="githubTitle">Rank</h3>
     <table width="100%" class="detail-item">
       <tr>
@@ -84,10 +55,4 @@
       </tr>
     </table>
 
-    <!--h3 class="tags">tags</h3>
-    <ul class="tags">
-      <li class="tag"><a href="/tags/info">info</a></li>
-      <li class="tag"><a href="/tags/tools">tools</a></li>
-      <li class="tag"><a href="/tags/package.json">package.json</a></li>
-    </ul -->
   </div>

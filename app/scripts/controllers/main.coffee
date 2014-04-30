@@ -12,11 +12,10 @@ angular.module('rankApp')
     $scope.currentTab = "popular"
     $scope.loading = true
     $scope.languages = []
-    #$http.get("/api/languages")
-    #$http.jsonp("http://#{API_HOST}/github/languages?callback=JSON_CALLBACK")
-    $http.get("http://#{API_HOST}/github/languages")
-      .success (data) ->
-        $scope.languages = data.data
+    if $scope.languages.length is 0
+      $http.get("http://#{API_HOST}/github/languages")
+        .success (data) ->
+          $scope.languages = data.data
     $rootScope.langFilter = "JavaScript"
     getTagValue = ($event) ->
       realTarget = $event.target
@@ -36,6 +35,16 @@ angular.module('rankApp')
     $rootScope.getDesc = (person) ->
       return " " if not person?.info
       return if not person.info.bio?.length then "Created: " + person.info.created_at.replace("T", " ").replace("Z", "") else person.info.bio
+    $scope.showLanguageTag = () ->
+      return $location.$$path.indexOf("info") is 1
+    $scope.getTagsCaption = () ->
+      return if $location.$$path.indexOf("info") is 1 then "Search" else "languages"
+    $scope.searchUser = () ->
+      id = $("#githubId")[0].value
+      return if not id or id.length is 0
+      $location.path "/info/#{id}"
+    $scope.onKeyPress = ($event) ->
+      $scope.searchUser() if $event.which is 13
 
   .controller 'RankCtrl', ($rootScope, $scope, $route, $http, $location, $routeParams) ->
     $scope.$parent.currentTab = "popular"
@@ -45,9 +54,7 @@ angular.module('rankApp')
     $scope.rank = {}
     retrieveRank = () ->
       $scope.loading = true
-      #$http.get("/api/rank?language=#{$rootScope.langFilter}")
       language = encodeURIComponent($rootScope.langFilter)
-      #$http.get("http://#{API_HOST}/github/rank?language=#{$rootScope.langFilter}&page_count=10")
       $http.get("http://#{API_HOST}/github/rank?language=#{language}&page_count=10")
         .success (data) ->
           $scope.rank = data
@@ -55,13 +62,6 @@ angular.module('rankApp')
         .error () ->
           $scope.loading = false
     retrieveRank()
-    $http.get("/api/languages")
-      .success (data) ->
-        $scope.languages = data
-    $scope.changeTab = (tab) ->
-      $scope.currentTab = tab
-      $location.path "/" + tab
-      return
     getTagValue = ($event) ->
       realTarget = $event.target
       if $event.target.tagName is "LI"
@@ -122,36 +122,29 @@ angular.module('rankApp')
             text: ''
         subtitle:
             text: ''
-        xAxis: {
-            type: 'category',
-        },
-        yAxis: {
-            min: 0,
-            title: {
+        xAxis:
+            type: 'category'
+        yAxis:
+            min: 0
+            title:
                 text: ''
-            }
-        },
-        legend: {
+        legend:
             enabled: false
-        },
-        tooltip: {
-            pointFormat: 'Github contribution: <b>{point.y}</b>',
-        },
+        tooltip:
+            pointFormat: 'Github contribution: <b>{point.y}</b>'
         series: [{
-            name: 'Contribution',
-            data: myData,
-            dataLabels: {
-                enabled: true,
-                align: 'center',
+            name: 'Contribution'
+            data: myData
+            dataLabels:
+                enabled: true
+                align: 'center'
                 color: '#003366'
-                x: 0,
-                y: 0,
-                style: {
-                    fontSize: '11px',
-                    fontFamily: 'Verdana, sans-serif',
+                x: 0
+                y: 0
+                style:
+                    fontSize: '11px'
+                    fontFamily: 'Verdana, sans-serif'
                     textShadow: '0 0 3px black'
-                }
-            }
         }]
       })
       return  
@@ -192,7 +185,7 @@ angular.module('rankApp')
       formatHour = formatMonth
       for h in [0...MAX_BARS]
         tz = if not $scope.person.loc then 0 else $scope.person.loc.timezone
-        realHour = (h - 8 - tz + 24) % 24
+        realHour = (h - 7 - tz + 24) % 24
         myData[h] = [h + "", $scope.person.hour?[formatHour(realHour)] || 0]
       myChart = new JSChart('h-contrib-con', 'bar')
       myChart.setDataArray(myData)
@@ -215,7 +208,7 @@ angular.module('rankApp')
       formatHour = formatMonth
       for h in [0...MAX_BARS]
         tz = if not $scope.person.loc then 0 else $scope.person.loc.timezone
-        realHour = (h - 8 - tz + 24) % 24
+        realHour = (h - 7 - tz + 24) % 24
         myData[h] = [h + "", $scope.person.hour?[formatHour(realHour)] || 0]
       $('#h-contrib-con').highcharts({
         chart:
@@ -271,33 +264,27 @@ angular.module('rankApp')
         return b[1] - a[1]
       myData.slice(0, MAX_BARS + 1)
       $('#lang-pie').highcharts({
-          chart: {
-              plotBackgroundColor: null,
-              plotBorderWidth: null,
+          chart:
+              plotBackgroundColor: null
+              plotBorderWidth: null
               plotShadow: false
-          },
           title:
               text: ''
-          tooltip: {
+          tooltip:
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-          },
-          plotOptions: {
-              pie: {
-                  allowPointSelect: true,
-                  cursor: 'pointer',
-                  dataLabels: {
-                      enabled: true,
-                      format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                      style: {
+          plotOptions:
+              pie:
+                  allowPointSelect: true
+                  cursor: 'pointer'
+                  dataLabels:
+                      enabled: true
+                      format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                      style:
                           color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                      },
                       connectorColor: 'silver'
-                  }
-              }
-          },
           series: [{
-              type: 'pie',
-              name: 'languages',
+              type: 'pie'
+              name: 'languages'
               data: myData
           }]
       })

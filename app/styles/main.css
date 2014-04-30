@@ -43,7 +43,7 @@ header #filter .selected{background:-webkit-gradient(linear, left top, left bott
 #right{position:absolute;right:0;top:0;width:310px}
 #ad{text-align:center;background:#fff;-webkit-border-radius:5px;border-radius:5px;border:1px solid #ccc;-webkit-box-shadow:#ccc 0 2px 5px 2px;box-shadow:#ccc 0 2px 5px 2px;padding:10px 0}
 #tags,#search{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.3)), color-stop(1, rgba(255,255,255,0))),url('../images/subtle_dots_orange.png');background:-webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%),url('../images/subtle_dots_orange.png');background:-moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%),url('../images/subtle_dots_orange.png');background:-o-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%),url('../images/subtle_dots_orange.png');background:-ms-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%),url('../images/subtle_dots_orange.png');background:linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%),url('../images/subtle_dots_orange.png');-webkit-box-shadow:#914028 0 1px 7px;box-shadow:#914028 0 1px 7px;-webkit-border-radius:2px;border-radius:2px;padding:10px;text-align:jusitfy;overflow:hidden;margin-bottom:20px;}
-#tags #searchTags,#search #searchTags,#tags #searchSite,#search #searchSite{padding:0 0 10px 0;}
+#tags #searchTags,#search #searchTags,#tags #searchSite,#search #searchSite{padding:0 0 0px 0;}
 #tags #searchTags input,#search #searchTags input,#tags #searchSite input,#search #searchSite input{color:#914028;border:1px solid #f9a48b;padding:7px;width:272px;font-weight:bold;font-size:12pt;}
 #tags #searchTags input::-webkit-input-placeholder,#search #searchTags input::-webkit-input-placeholder,#tags #searchSite input::-webkit-input-placeholder,#search #searchSite input::-webkit-input-placeholder{font-weight:normal;color:#f9a48b}
 #tags #searchTags input:focus,#search #searchTags input:focus,#tags #searchSite input:focus,#search #searchSite input:focus{outline:1px solid #f9a48b}
@@ -52,6 +52,9 @@ header #filter .selected{background:-webkit-gradient(linear, left top, left bott
 #tags ul li a,#search ul li a{color:inherit;text-decoration:none}
 #tags ul li:hover:not(.selected),#search ul li:hover:not(.selected){text-shadow:#fff 1px 1px 2px;background:#fcb08a}
 #tags ul li.selected,#search ul li.selected{background:#f25d31;color:#fff;text-shadow:#511 1px 1px 2px}
+#searchBtn{background:#fcb08a;border:0px;border-radius: 3px 3px 3px 3px;padding: 7px 6px;margin-top:4px;width:100%;color:#555555;}
+#searchBtn:hover{background:#f25d31;cursor:pointer;color:white;}
+#searchBtn:active{text-shadow:1px 1px 2px}
 #moduleInfo{background:#fff;-webkit-border-radius:1px;border-radius:1px;-webkit-box-shadow:#ccc 0 2px 5px 2px;box-shadow:#ccc 0 2px 5px 2px;margin-top:0px;width:730px;}
 #moduleInfo div#top{text-shadow:1px 1px #000;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #888), color-stop(0.9, #555), color-stop(1, #444));background:-webkit-linear-gradient(top, #888 0%, #555 90%, #444 100%);background:-moz-linear-gradient(top, #888 0%, #555 90%, #444 100%);background:-o-linear-gradient(top, #888 0%, #555 90%, #444 100%);background:-ms-linear-gradient(top, #888 0%, #555 90%, #444 100%);background:linear-gradient(top, #888 0%, #555 90%, #444 100%);color:#fff;border-bottom:1px solid #444;padding:12px 20px;}
 #moduleInfo div#top h2{font-size:22pt;margin-top:0;margin-bottom:10px;}
