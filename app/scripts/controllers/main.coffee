@@ -222,7 +222,7 @@ angular.module('rankApp')
         xAxis:
           type: 'category'
           labels:
-            align: 'right'
+            align: 'center'
             style:
               fontSize: '11px'
               fontFamily: 'Verdana, sans-serif'
@@ -233,7 +233,54 @@ angular.module('rankApp')
         legend:
           enabled: false
         tooltip:
-          pointFormat: 'Github contribution in 2008: <b>{point.y:.1f}</b>'
+          pointFormat: 'Github contribution: <b>{point.y}</b>'
+        series: [{
+          name: 'Contribution'
+          data: myData
+          dataLabels:
+            enabled: true,
+            align: 'center'
+            color: '#003366'
+            x: 0
+            y: 0
+            style:
+              fontSize: '11px'
+              fontFamily: 'Verdana, sans-serif'
+              textShadow: '0 0 3px black'
+        }]
+      })
+      return
+
+    drawChartD1 = () ->
+      MAX_BARS = 7
+      weekDay = ["Sun.", "Mon.", "Tue.", "Wen.", "Thu.", "Fri.", "Sat."]
+      myData = []
+      for h in [0...MAX_BARS]
+        myData[h] = [weekDay[h], $scope.person.day?[h] || 0]
+      $('#d-contrib-con').highcharts({
+        chart:
+          type: 'column'
+          height: 300
+        colors: ['#D97431']
+        title:
+          text: ''
+        subtitle:
+          text: ''
+        xAxis:
+          type: 'category'
+          labels:
+            align: 'center'
+            style:
+              fontSize: '11px'
+              fontFamily: 'Verdana, sans-serif'
+        yAxis:
+          min: 0
+          title:
+            text: ''
+        legend:
+          enabled: false
+        tooltip:
+          pointFormat: 'Github contribution: <b>{point.y}</b>'
         series: [{
           name: 'Contribution'
           data: myData
@@ -356,6 +403,7 @@ angular.module('rankApp')
           drawLanguagePie1()
           drawChartM1()
           drawChartH1()
+          drawChartD1()
     return
 
   .controller 'ComingCtrl', ($rootScope, $scope, $route, $routeParams) ->
