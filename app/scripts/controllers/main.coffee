@@ -253,7 +253,7 @@ angular.module('rankApp')
 
     drawChartD1 = () ->
       MAX_BARS = 7
-      weekDay = ["Sun.", "Mon.", "Tue.", "Wen.", "Thu.", "Fri.", "Sat."]
+      weekDay = ["Mon.", "Tue.", "Wen.", "Thu.", "Fri.", "Sat.", "Sun."]
       myData = []
       for h in [0...MAX_BARS]
         myData[h] = [weekDay[h], $scope.person.day?[h] || 0]
