@@ -1,10 +1,10 @@
     <div id="container">
       <header>
-        <h1>Github Leaderboard</h1>
+        <h1>Github 程序员排行榜</h1>
         <ul id="page">
-          <li data-val="popular" class="type-b selectable" ng-class="{selected:currentTab=='popular'}"><a href="javascript:void(0)" class="type" ng-click="changeTab('popular')">Popular</a></li>
-          <li data-val="interesting" class="type-b selectable" ng-class="{selected:currentTab=='interesting'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('interesting')">Interesting</a></li>
-          <li data-val="new" class="type-b selectable" ng-class="{selected:currentTab=='new'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('new')">New</a></li>
+          <li data-val="popular" class="type-b selectable" ng-class="{selected:currentTab=='popular'}"><a href="javascript:void(0)" class="type" ng-click="changeTab('popular')">活跃榜</a></li>
+          <li data-val="interesting" class="type-b selectable" ng-class="{selected:currentTab=='interesting'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('interesting')">综合榜</a></li>
+          <li data-val="new" class="type-b selectable" ng-class="{selected:currentTab=='new'}"><a href="javascript:void(0)" class="type"  ng-click="changeTab('new')">短期榜</a></li>
         </ul>
         <ul id="filter">
           <li class="selected">{{getTagsCaption()}}</li>
@@ -69,8 +69,7 @@ google_ad_height = 600;</script>
       </section>
 
       <footer>
-        <p class="tm">Github is an official trademark of github.com. This website is not formally 
-related to or endorsed by any companies or communities.</p>
-        <p class="links"><img src="images/logo.png" alt="my logo">&nbsp; Created by gitman - <a href="http://gitman.org/">Web</a> - <a href="mailto:me@gitman.org">Email</a> -  <a href="http://github.com/gitman">GitHub</a> - <a href="http://twitter.com/gitman">Twitter</a></p>
+        <p class="tm">本排行榜数据来自<a href="http://www.githubarchive.org">GitHub Archive</a>，不能保证与GitHub官方完全一致。</p>
+        <p class="links"><img src="images/user.gif" alt="my logo">&nbsp; 作者 - <a href="https://github.com/xiaocong">@xiaocong</a> &amp; <a href="https://github.com/oneway102">@oneway102</a></p>
       </footer>
     </div>

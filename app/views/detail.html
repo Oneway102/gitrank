@@ -10,11 +10,19 @@
   </div>
 
   <div id="bottom">
-    <h3 class="githubTitle">github</h3>
-    <ul>
-      <li><a href="{{person.info.html_url}}">{{person.info.html_url}}</a>
-      </li>
-    </ul>
+    <h3 class="githubTitle">Basic Info</h3>
+    <table class="basic-info">
+      <tr>
+        <td width="20%" title="GitHub"><img src="../images/github.png"> &nbsp;<a href="{{person.info.html_url}}">@{{person.id}}</a></td>
+        <td width="30%" title="Email"><img src="../images/email.png"> &nbsp;<a href="mailto:{{person.info.email}}">{{getEmail()}}</a></td>
+        <td title="Blog"><img src="../images/blog.png"> &nbsp;<a href="{{person.info.blog}}">{{getBlog()}}</a></td>
+      </tr>
+      <tr>
+        <td title="Location"><img src="../images/location.png"> &nbsp;{{person.loc.country}} {{person.loc.city}}</td>
+        <td title="Followers"><img src="../images/followers.png"> &nbsp;{{person.info.followers}}</td>
+        <td title="Company"><img src="../images/org.png"> &nbsp;{{person.info.company}}</td>
+      </tr>
+    </table>
 
     <h3>Expertise</h3>
     <div id="lang-pie" class="mychart"></div>

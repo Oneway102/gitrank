@@ -38,7 +38,7 @@ angular.module('rankApp')
     $scope.showLanguageTag = () ->
       return $location.$$path.indexOf("info") is 1
     $scope.getTagsCaption = () ->
-      return if $location.$$path.indexOf("info") is 1 then "Search" else "languages"
+      return if $location.$$path.indexOf("info") is 1 then "搜一搜" else "编程语言"
     $scope.searchUser = () ->
       id = $("#githubId")[0].value
       return if not id or id.length is 0
@@ -388,6 +388,14 @@ angular.module('rankApp')
       result = $scope.person.rank.World[lang]
       return "N/A" if not result
       return if result > 50000 then "> 50000" else result
+    $scope.getBlog = () ->
+      return "" if not $scope.person?.info?.blog?
+      return $scope.person.info.blog if $scope.person.info.blog.length <= 35
+      return $scope.person.info.blog.substr(0, 35) + "..."
+    $scope.getEmail = () ->
+      return "" if not $scope.person?.info?.email?
+      return $scope.person.info.email if $scope.person.info.email.length <= 16
+      return $scope.person.info.email.substr(0, 16) + "..."
 
     # We may need to retrieve data from server.
     if $scope.loginName
