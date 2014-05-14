@@ -10,28 +10,28 @@
   </div>
 
   <div id="bottom">
-    <h3 class="githubTitle">Basic Info</h3>
+    <h3 class="githubTitle">基本信息</h3>
     <table class="basic-info">
       <tr>
         <td width="20%" title="GitHub"><img src="../images/github.png"> &nbsp;<a href="{{person.info.html_url}}">@{{person.id}}</a></td>
         <td width="30%" title="Email"><img src="../images/email.png"> &nbsp;<a href="mailto:{{person.info.email}}">{{getEmail()}}</a></td>
-        <td title="Blog"><img src="../images/blog.png"> &nbsp;<a href="{{person.info.blog}}">{{getBlog()}}</a></td>
+        <td title="博客主页"><img src="../images/blog.png"> &nbsp;<a href="{{person.info.blog}}">{{getBlog()}}</a></td>
       </tr>
       <tr>
-        <td title="Location"><img src="../images/location.png"> &nbsp;{{person.loc.country}} {{person.loc.city}}</td>
-        <td title="Followers"><img src="../images/followers.png"> &nbsp;{{person.info.followers}}</td>
-        <td title="Company"><img src="../images/org.png"> &nbsp;{{person.info.company}}</td>
+        <td title="城市"><img src="../images/location.png"> &nbsp;{{person.loc.country}} {{person.loc.city}}</td>
+        <td title="粉丝"><img src="../images/followers.png"> &nbsp;{{person.info.followers}}</td>
+        <td title="公司"><img src="../images/org.png"> &nbsp;{{person.info.company}}</td>
       </tr>
     </table>
 
-    <h3>Expertise</h3>
+    <h3>语言技能</h3>
     <div id="lang-pie" class="mychart"></div>
     <ul>
       <li ng-repeat="value in person._lang">{{value[0]}}: {{value[1]}}</a>
       </li>
     </ul>
 
-    <h3 class="githubTitle">Hot Repos</h3>
+    <h3 class="githubTitle">参与的项目</h3>
     <table class="detail-item">
       <tr ng-repeat="repo in person.repos">
         <td>&nbsp;</td>
@@ -41,24 +41,24 @@
       </tr>
     </table>
 
-    <h3 class="githubTitle">Historical Contribution</h3>
+    <h3 class="githubTitle">代码贡献 - 最近12个月</h3>
     <div id="m-contrib-con" class="mychart">monthly contribution chart
     </div>
     
-    <h3 class="githubTitle">Hourly Contribution</h3>
+    <h3 class="githubTitle">代码贡献 - 24小时分布</h3>
     <div id="h-contrib-con" class="mychart">hourly contribution chart
     </div>
 
-    <h3 class="githubTitle">Week Daily Contribution</h3>
+    <h3 class="githubTitle">代码贡献 - 一周分布</h3>
     <div id="d-contrib-con" class="mychart">daily contribution chart
     </div>
 
-    <h3 class="githubTitle">Rank</h3>
+    <h3 class="githubTitle">排名</h3>
     <table width="100%" class="detail-item">
       <tr>
-        <th align="left">Language</th>
-        <th align="left">China #</th>
-        <th align="left">World #</th>
+        <th align="left">编程语言</th>
+        <th align="left">中国排名</th>
+        <th align="left">世界排名</th>
       </tr>
       <tr ng-repeat="rank in person._rankChina">
         <td>{{rank[0]}}</td>

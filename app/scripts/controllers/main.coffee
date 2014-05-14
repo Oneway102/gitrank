@@ -34,7 +34,7 @@ angular.module('rankApp')
       return person.info.login
     $rootScope.getDesc = (person) ->
       return " " if not person?.info
-      return if not person.info.bio?.length then "Created: " + person.info.created_at.replace("T", " ").replace("Z", "") else person.info.bio
+      return if not person.info.bio?.length then "注册时间: " + person.info.created_at.replace("T", " ").replace("Z", "") else person.info.bio
     $scope.showLanguageTag = () ->
       return $location.$$path.indexOf("info") is 1
     $scope.getTagsCaption = () ->
@@ -131,7 +131,7 @@ angular.module('rankApp')
         legend:
             enabled: false
         tooltip:
-            pointFormat: 'Github contribution: <b>{point.y}</b>'
+            pointFormat: '贡献值: <b>{point.y}</b>'
         series: [{
             name: 'Contribution'
             data: myData
@@ -233,7 +233,7 @@ angular.module('rankApp')
         legend:
           enabled: false
         tooltip:
-          pointFormat: 'Github contribution: <b>{point.y}</b>'
+          pointFormat: '贡献值: <b>{point.y}</b>'
         series: [{
           name: 'Contribution'
           data: myData
@@ -280,7 +280,7 @@ angular.module('rankApp')
         legend:
           enabled: false
         tooltip:
-          pointFormat: 'Github contribution: <b>{point.y}</b>'
+          pointFormat: '贡献值: <b>{point.y}</b>'
         series: [{
           name: 'Contribution'
           data: myData
