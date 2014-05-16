@@ -5,7 +5,7 @@
         <img ng-src="{{person.info.avatar_url}}" style="width:150px">
       </a>
     </div>
-    <h2><span class="id">{{person.name}}</h2>
+    <h2><span class="id">{{person._name}}</h2>
     <p class="desc">{{person._desc}}</p>
   </div>
 
@@ -18,13 +18,14 @@
         <td title="博客主页"><img src="../images/blog.png"> &nbsp;<a href="{{person.info.blog}}">{{getBlog()}}</a></td>
       </tr>
       <tr>
-        <td title="城市"><img src="../images/location.png"> &nbsp;{{person.loc.country}} {{person.loc.city}}</td>
+        <td title="城市"><img src="../images/location.png"> &nbsp;{{person.loc_zh.country}} {{person.loc_zh.city}}</td>
         <td title="粉丝"><img src="../images/followers.png"> &nbsp;{{person.info.followers}}</td>
         <td title="公司"><img src="../images/org.png"> &nbsp;{{person.info.company}}</td>
       </tr>
     </table>
 
     <h3>语言技能</h3>
+    <p class="data-desc">{{person._lang._desc}}</p>
     <div id="lang-pie" class="mychart"></div>
     <ul>
       <li ng-repeat="value in person._lang">{{value[0]}}: {{value[1]}}</a>
@@ -42,10 +43,12 @@
     </table>
 
     <h3 class="githubTitle">代码贡献 - 最近12个月</h3>
+    <p class="data-desc">{{person.month._desc}}</p>
     <div id="m-contrib-con" class="mychart">monthly contribution chart
     </div>
     
     <h3 class="githubTitle">代码贡献 - 24小时分布</h3>
+    <p class="data-desc">{{person.hour._desc}}</p>
     <div id="h-contrib-con" class="mychart">hourly contribution chart
     </div>
 

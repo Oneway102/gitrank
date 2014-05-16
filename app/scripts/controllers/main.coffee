@@ -98,10 +98,8 @@ angular.module('rankApp')
     formatMonth = (m) ->
       result = if String(m).length is 1 then "0" + String(m) else String(m)
 
-    drawChartM1 = () ->
+    buildDataMonthly = () ->
       MAX_BARS = 12
-      language = $scope.person.month
-      return if not language
       currentMonth = (new Date()).getMonth() + 1
       currentYear = (new Date()).getFullYear()
       myData = []
@@ -113,6 +111,37 @@ angular.module('rankApp')
           lmonth = month + 12
           myData[m-1] = [String(currentYear-1) + "/" + lmonth, $scope.person.month[String(currentYear-1)]?[formatMonth(lmonth)] || 0]
         month--
+      $scope.person.month._myData = myData
+    buildDataHourly = () ->
+      MAX_BARS = 24
+      hContrib = $scope.person.hour
+      return if not hContrib
+      myData = []
+      formatHour = formatMonth
+      for h in [0...MAX_BARS]
+        tz = if not $scope.person.loc then 0 else $scope.person.loc.timezone
+        realHour = (h - 7 - tz + 24) % 24
+        myData[h] = [h + "", $scope.person.hour?[formatHour(realHour)] || 0]
+      $scope.person.hour._myData = myData
+
+    drawChartM1 = () ->
+      MAX_BARS = 12
+      language = $scope.person.month
+      return if not language
+      ###
+      currentMonth = (new Date()).getMonth() + 1
+      currentYear = (new Date()).getFullYear()
+      myData = []
+      month = currentMonth
+      for m in [MAX_BARS...0]
+        if month > 0
+          myData[m-1] = [currentYear + "/" + month, $scope.person.month[String(currentYear)]?[formatMonth(month)] || 0]
+        else
+          lmonth = month + 12
+          myData[m-1] = [String(currentYear-1) + "/" + lmonth, $scope.person.month[String(currentYear-1)]?[formatMonth(lmonth)] || 0]
+        month--
+      ###
+      myData = $scope.person.month._myData
       $('#m-contrib-con').highcharts({
         chart:
             type: 'column'
@@ -201,6 +230,7 @@ angular.module('rankApp')
       return
 
     drawChartH1 = () ->
+      ###
       MAX_BARS = 24
       hContrib = $scope.person.hour
       return if not hContrib
@@ -210,6 +240,9 @@ angular.module('rankApp')
         tz = if not $scope.person.loc then 0 else $scope.person.loc.timezone
         realHour = (h - 7 - tz + 24) % 24
         myData[h] = [h + "", $scope.person.hour?[formatHour(realHour)] || 0]
+      ###
+      myData = $scope.person.hour._myData
+      return if not myData or myData.length is 0
       $('#h-contrib-con').highcharts({
         chart:
           type: 'column'
@@ -388,6 +421,91 @@ angular.module('rankApp')
       result = $scope.person.rank.World[lang]
       return "N/A" if not result
       return if result > 50000 then "> 50000" else result
+    composeLanguageDesc = () ->
+      return "" if not $scope.person?._lang || $scope.person._lang.length is 0
+      name = $scope.person._name
+      desc = ""
+      _language = $scope.person._lang
+      #1
+      if $scope.person._lang.length >= 10
+        desc += "#{name}总共使用过#{$scope.person._lang.length}种语言，是个编程多面手。"
+      else
+        desc += "#{name}总共使用过#{$scope.person._lang.length}种语言。"
+      #2
+      if _language[0]?[1] and _language[0][1] >= 100
+        if _language[1]?[1] and _language[1][1] >= 100
+          if _language[2]?[1] and _language[2][1] >= 100
+            desc += "#{name}最擅长的语言是#{_language[0][0]}，并且在#{_language[1][0]}和#{_language[2][0]}上也有不错的造诣。"
+          else
+            desc += "#{name}最擅长的语言是#{_language[0][0]}，并且在#{_language[1][0]}上也有不错的造诣。"
+        else
+          desc += "#{name}一直专注于#{_language[0][0]}的开发。"
+      else if _language[0][1] and _language[0][1] > 0
+        desc += "#{name}使用最多的语言是#{_language[0][0]}。"
+      else
+        desc += "#{name}似乎没有留下任何编程方面的记录。"
+      return desc
+    composeMonthlyDesc = () ->
+      return "" if not $scope.person?.month?._myData || $scope.person.month._myData.length is 0
+      desc = ""
+      name = $scope.person._name
+      sum = 0
+      sum += value[1] for value in $scope.person.month._myData
+      mean = sum / $scope.person.month._myData.length
+      count = 0
+      count++ for value in $scope.person.month._myData when value[1] < mean/2
+      if mean <= 10
+        desc = "#{name}在最近12个月的代码贡献总数并不多。"
+      if count >= 3
+        desc = "#{name}在最近12个月的代码贡献次数并不平均，在有些月份似乎忙于GitHub之外的事情。"
+      else
+        desc = "#{name}在最近12个月的代码贡献次数很平均，有着非常稳定的编程爱好。"
+      return desc
+    composeHourlyDesc = () ->
+      data = $scope.person.hour._myData
+      name = $scope.person._name
+      i = 0; j = 0; k = 0; l = 0; m = 0;
+      i += data[index][1] for index in [2..7]
+      j += data[index][1] for index in [8..12]
+      k += data[index][1] for index in [13..18]
+      l += data[index][1] for index in [19..22]
+      m = data[0][1] + data[1][1] + data[23][1]
+      stat = [
+        ["凌晨", i, i/6, "经常去米国工作吧？要不就是机器人！"]
+        ["上午", j, j/5, "上午工作狂人。"]
+        ["下午", k, k/6, "下午工作狂人。"]
+        ["晚上", l, l/4, "晚上工作狂人，估计是没对象，没老婆，没小孩的三无人员..."]
+        ["半夜", m, m/3, "半夜工作狂人。"]
+      ]
+      sum = 0
+      sum += value[1] for value in data
+      mean = sum / data.length
+      sortedStat = stat.slice(0)
+      sortedStat.sort (a, b) ->
+        return b[2] - a[2]
+      #maxIndex = 0
+      #maxIndex = index for value, index in stat when value[1] > stat[maxIndex][1]
+      hotSpans = []
+      hotSpans.push value[0] for value, index in stat when value[2] > mean and value[0] isnt sortedStat[0][0]
+      extra = if hotSpans.length > 0 then "， 在" + hotSpans.join("， ") + "时段也有很高的编程效率" else ""
+      desc = "#{name}在#{sortedStat[0][0]}时段的编程效率最高#{extra}，是"
+      if sortedStat[0][2] / sortedStat[1][2] >= 2
+        desc += sortedStat[0][3]
+      else
+        #1
+        condition = true
+        condition = false for value in stat when value[2] < mean/5
+        return desc += "24小时编程狂人，当然也有可能是悲催的的加班码农..." if condition is true
+        #2
+        condition = true
+        condition = false for index in [1..4] when stat[index][2] < mean
+        return desc += "全天候编程狂人，要不就是还睡觉，估计就是超人了。" if condition is true
+        #3
+        return desc += "典型的夜猫子编程爱好者。" if (sortedStat[0][0] is "晚上" and sortedStat[1][0] is "半夜") or (sortedStat[1][0] is "晚上" and sortedStat[0][0] is "半夜")
+        #4
+        return desc += "白天工作型编程人员。" if (sortedStat[0][0] is "上午" and sortedStat[1][0] is "下午") or (sortedStat[1][0] is "上午" and sortedStat[0][0] is "下午")
+        return desc += "工作型编程人员。"
+
     $scope.getBlog = () ->
       return "" if not $scope.person?.info?.blog?
       return $scope.person.info.blog if $scope.person.info.blog.length <= 35
@@ -397,17 +515,25 @@ angular.module('rankApp')
       return $scope.person.info.email if $scope.person.info.email.length <= 16
       return $scope.person.info.email.substr(0, 16) + "..."
 
+    buildData = () ->
+      $scope.person._name = $scope.$parent.getName($scope.person)
+      $scope.person._desc = $scope.$parent.getDesc($scope.person)
+      $scope.person.repos.sort(sortRepo)
+      $scope.person.repos = $scope.person.repos.slice(0, 5)
+      $scope.person._rankChina = sortSimpleObject($scope.person.rank.China, true)
+      $scope.person._lang = sortSimpleObject($scope.person.lang, false)
+      buildDataMonthly()
+      buildDataHourly()
+      $scope.person._lang._desc = composeLanguageDesc()
+      $scope.person.month._desc = composeMonthlyDesc()
+      $scope.person.hour._desc = composeHourlyDesc()
+
     # We may need to retrieve data from server.
     if $scope.loginName
       $http.get("http://#{API_HOST}/github/users/#{$scope.loginName}")
         .success (data) ->
           $scope.person = data
-          $scope.person.name = $scope.$parent.getName($scope.person)
-          $scope.person._desc = $scope.$parent.getDesc($scope.person)
-          $scope.person.repos.sort(sortRepo)
-          $scope.person.repos = $scope.person.repos.slice(0, 5)
-          $scope.person._rankChina = sortSimpleObject($scope.person.rank.China, true)
-          $scope.person._lang = sortSimpleObject($scope.person.lang, false)
+          buildData()
           drawLanguagePie1()
           drawChartM1()
           drawChartH1()
