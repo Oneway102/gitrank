@@ -17,6 +17,45 @@ angular.module('rankApp')
         .success (data) ->
           $scope.languages = data.data
     $rootScope.langFilter = "JavaScript"
+
+    $rootScope.rank = {}
+    $rootScope.pageIndex = 0
+    $rootScope.loading = false
+    $rootScope.paginationInit = false
+    initPagination = () ->
+      $('#pagination').show()
+      $('.pagination').jqPagination({
+        max_page: $rootScope.rank?.pages || 1
+        paged: (page) ->
+          return if page > $rootScope.rank.pages
+          $rootScope.pageIndex = page - 1
+          $rootScope.retrieveRank()
+      })
+      $rootScope.paginationInit = true
+      return
+    $rootScope.retrieveRank = () ->
+      #return if $rootScope.loading is true
+      $rootScope.loading = true
+      language = encodeURIComponent($rootScope.langFilter)
+      $http.get("http://#{API_HOST}/github/rank?language=#{language}&page_count=10&page=#{$rootScope.pageIndex}")
+        .success (data) ->
+          $rootScope.loading = false
+          $rootScope.rank = data
+          #$rootScope.rank.pages = 1000 if $rootScope.rank.pages > 1000
+          initPagination() if not $rootScope.paginationInit
+          if $rootScope.rank.pages isnt $('.pagination').jqPagination('option', 'max_page')
+            $('.pagination').jqPagination('option', 'max_page', $rootScope.rank.pages)
+          $('#pagination').hide() if $rootScope.rank.pages is 0
+          return
+        .error () ->
+          $rootScope.loading = false
+          $('#pagination').hide()
+          return
+    ###
+    $scope.goto = (page) ->
+      $rootScope.pageIndex = page
+      retrieveRank()
+    ###
     getTagValue = ($event) ->
       realTarget = $event.target
       if $event.target.tagName is "LI"
@@ -51,7 +90,8 @@ angular.module('rankApp')
     $scope.sectionId = "modules"
     $rootScope.langFilter = $routeParams.lang || "JavaScript"
     $scope.loading = true
-    $scope.rank = {}
+    #$scope.rank = {}
+
     retrieveRank = () ->
       $scope.loading = true
       language = encodeURIComponent($rootScope.langFilter)
@@ -61,7 +101,6 @@ angular.module('rankApp')
           $scope.loading = false
         .error () ->
           $scope.loading = false
-    retrieveRank()
     getTagValue = ($event) ->
       realTarget = $event.target
       if $event.target.tagName is "LI"
@@ -88,6 +127,8 @@ angular.module('rankApp')
     #$scope.getName = $scope.$parent.getName
     $scope.viewPerson = (person) ->
       $location.path "/info/#{person.info.login}"
+
+    $rootScope.retrieveRank()
     return
 
   .controller 'DetailCtrl', ($rootScope, $scope, $route, $http, $routeParams) ->
@@ -465,14 +506,14 @@ angular.module('rankApp')
       data = $scope.person.hour._myData
       name = $scope.person._name
       i = 0; j = 0; k = 0; l = 0; m = 0;
-      i += data[index][1] for index in [2..7]
-      j += data[index][1] for index in [8..12]
+      i += data[index][1] for index in [2..8]
+      j += data[index][1] for index in [9..12]
       k += data[index][1] for index in [13..18]
       l += data[index][1] for index in [19..22]
       m = data[0][1] + data[1][1] + data[23][1]
       stat = [
-        ["凌晨", i, i/6, "经常去米国工作吧？要不就是机器人！"]
-        ["上午", j, j/5, "上午工作狂人。"]
+        ["凌晨", i, i/7, "经常去米国工作吧？要不就是机器人！"]
+        ["上午", j, j/4, "上午工作狂人。"]
         ["下午", k, k/6, "下午工作狂人。"]
         ["晚上", l, l/4, "晚上工作狂人，估计是没对象，没老婆，没小孩的三无人员..."]
         ["半夜", m, m/3, "半夜工作狂人。"]

@@ -28,7 +28,7 @@ header #filter .selected{background:-webkit-gradient(linear, left top, left bott
 #modules li:hover{background:#fff4ef}
 #modules li:not(:first-child){border-top:1px solid #ddd}
 #modules li p,#modules li h3{margin:0}
-#modules li .pos{font-weight:200;font-size:20pt;display:inline-block;width:80px;text-align:center;vertical-align:middle;}
+#modules li .pos{color:#555;font-weight:200;font-size:20pt;display:inline-block;width:100px;text-align:center;vertical-align:middle;}
 #modules li .pos .num:before{content:"#";padding-right:3px;font-size:13pt}
 #modules li .pos .score{font-weight:400;color:#aaa;font-size:9pt}
 #modules li .module-info{display:inline-block;vertical-align:middle;}
@@ -95,3 +95,8 @@ table.basic-info td{color:#555}
 table.basic-info img{height:16px;}
 
 .data-desc{color:#666;margin-left:20px}
+
+
+/* ----------------------- */
+section.pagination{padding-right: 320px}
+.pagination{height:40px;margin-top: 20px}
