@@ -27,14 +27,17 @@ angular.module('rankApp')
       $('.pagination').jqPagination({
         max_page: $rootScope.rank?.pages || 1
         paged: (page) ->
-          return if page > $rootScope.rank.pages
+          return if page > $rootScope.rank.pages || $rootScope.pageIndex is page - 1
           $rootScope.pageIndex = page - 1
           $rootScope.retrieveRank()
       })
       $rootScope.paginationInit = true
       return
-    $rootScope.retrieveRank = () ->
+    $rootScope.retrieveRank = (reset) ->
       #return if $rootScope.loading is true
+      if reset and $rootScope.paginationInit 
+        $('.pagination').jqPagination('destroy')
+        $rootScope.paginationInit = false
       $rootScope.loading = true
       language = encodeURIComponent($rootScope.langFilter)
       $http.get("http://#{API_HOST}/github/rank?language=#{language}&page_count=10&page=#{$rootScope.pageIndex}")
@@ -43,8 +46,8 @@ angular.module('rankApp')
           $rootScope.rank = data
           #$rootScope.rank.pages = 1000 if $rootScope.rank.pages > 1000
           initPagination() if not $rootScope.paginationInit
-          if $rootScope.rank.pages isnt $('.pagination').jqPagination('option', 'max_page')
-            $('.pagination').jqPagination('option', 'max_page', $rootScope.rank.pages)
+          #if $rootScope.rank.pages isnt $('.pagination').jqPagination('option', 'max_page')
+          #  $('.pagination').jqPagination('option', 'max_page', $rootScope.rank.pages)
           $('#pagination').hide() if $rootScope.rank.pages is 0
           return
         .error () ->
@@ -62,6 +65,7 @@ angular.module('rankApp')
         realTarget = $event.target.children[0]
       return realTarget.innerHTML
     $scope.setLanguage = ($event, lang) ->
+      $rootScope.pageIndex = 0
       $location.path "rank/#{getTagValue($event)}"
     $scope.changeTab = (tab) ->
       $scope.currentTab = tab
@@ -91,6 +95,7 @@ angular.module('rankApp')
     $rootScope.langFilter = $routeParams.lang || "JavaScript"
     $scope.loading = true
     #$scope.rank = {}
+    $('#pagination').show()
 
     retrieveRank = () ->
       $scope.loading = true
@@ -128,7 +133,8 @@ angular.module('rankApp')
     $scope.viewPerson = (person) ->
       $location.path "/info/#{person.info.login}"
 
-    $rootScope.retrieveRank()
+    #$rootScope.pageIndex = 0
+    $rootScope.retrieveRank($rootScope.pageIndex == 0)
     return
 
   .controller 'DetailCtrl', ($rootScope, $scope, $route, $http, $routeParams) ->
