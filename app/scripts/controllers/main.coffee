@@ -136,6 +136,7 @@ angular.module('rankApp')
     $scope.sectionId = "moduleInfo"
     $scope.person = {}
     $scope.loginName = $routeParams.name
+    $('#pagination').hide()
     formatMonth = (m) ->
       result = if String(m).length is 1 then "0" + String(m) else String(m)
 
