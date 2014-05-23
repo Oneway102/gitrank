@@ -65,7 +65,6 @@ angular.module('rankApp')
         realTarget = $event.target.children[0]
       return realTarget.innerHTML
     $scope.setLanguage = ($event, lang) ->
-      $rootScope.pageIndex = 0
       $location.path "rank/#{getTagValue($event)}"
     $scope.changeTab = (tab) ->
       $scope.currentTab = tab
@@ -133,8 +132,8 @@ angular.module('rankApp')
     $scope.viewPerson = (person) ->
       $location.path "/info/#{person.info.login}"
 
-    #$rootScope.pageIndex = 0
-    $rootScope.retrieveRank($rootScope.pageIndex == 0)
+    $rootScope.pageIndex = 0
+    $rootScope.retrieveRank(true)
     return
 
   .controller 'DetailCtrl', ($rootScope, $scope, $route, $http, $routeParams) ->
